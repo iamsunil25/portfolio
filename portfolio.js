@@ -25,6 +25,8 @@ function myfunctionn(){
 window.onload = function(){
     myfunctionn()
 }
+
+console.log(window.screen.width)
 // const sections = document.querySelectorAll("section");
 // const navlist = document.querySelectorAll("nav ul li");
 // window.addEventListener("scroll", ()=>{
