@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,297 +9,343 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" type="text/css" href="portfolio.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic'
+    <link
+        href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic'
         rel='stylesheet' type='text/css'>
-    <script src="portfolio.js"></script>
+   
     <script src="https://kit.fontawesome.com/836a943e18.js" crossorigin="anonymous"></script>
 </head>
+
 <body style="background: #d4d3d7;overflow-x: hidden;">
-    <!-- <header  >
-        <div class="row shadow-lg pb-3" > -->
-        <nav class="shadow-lg pb-3 css-selector" id="lkj">
-            <ul>
-                <li><a href="#" style= "text-decoration: none;" class="active" ><img src="./homeicon.png" width = "2%" height = "2%;">Home</a></li>
-                 <li ><a href="#myservice" style= "text-decoration: none;" ><img src="./pngkit_services-icon-png_2087210.png" width="2%" height="2%">Services</a></li>
-                 <li ><a href="#projects" style= "text-decoration: none;" ><img src="./icons8-work-64.png" width="2%" height="2%">Projects</a></li>
-                 <li ><a href="#skills" style= "text-decoration: none;" ><img src="./skills.png" width="2%" height="2%">Skills</a></li>
-                 <li ><a href="#resume" style= "text-decoration: none;" ><img src="./cv.png" width="2%" height="2%">Resume</a></li>
-                 <li ><a href="#about" style= "text-decoration: none;" > <img src="./user.png" width="2%" height="2%">About</a></li>
-                 <li><a href="#contact" style= "text-decoration: none;" ><img src="./icons8-contact-us-48.png" width="2%" height="2%">Contact</a></li>
-              
-            </ul>
-        </nav>
-        <!-- </div>
-    </header> -->
-   
+
+    <nav class="shadow-lg pb-3 css-selector" id="lkj">
+        <i class="fa fa-times cross" onclick="document.getElementById('lkj').style.display = 'none'" style="position: absolute;left:10px;top: 25px;font-size: 45px;font-weight: bold;cursor: pointer;"></i>
+        <ul>
+            <li class="active" ><a href="#home" style="text-decoration: none;" ><img src="./homeicon.png" class="navitemimage">Home</a></li>
+            <li class="myservice"><a href="#myservice" style="text-decoration: none;"><img src="./pngkit_services-icon-png_2087210.png"
+                        class="navitemimage">Services</a></li>
+            <li class="projects "><a href="#projects" style="text-decoration: none;"><img src="./icons8-work-64.png"
+                        class="navitemimage">Projects</a></li>
+            <li class="skills"><a href="#skills" style="text-decoration: none;"><img src="./skills.png" class="navitemimage">Skills</a>
+            </li>
+            <li class="resume"><a href="#resume" style="text-decoration: none;"><img src="./cv.png" class="navitemimage">Resume</a>
+            </li>
+            <li class="about"><a href="#about" style="text-decoration: none;"> <img src="./user.png" class="navitemimage">About</a>
+            </li>
+            <li class="Contact"><a href="#Contact" style="text-decoration: none;"><img src="./icons8-contact-us-48.png"  class="navitemimage">Contact</a></li>
+
+        </ul>
+    </nav>
+
+
     <br>
-   
+
     <br>
-    <main style="margin-top: 130px;">
-       
-        <section class=" row" style="margin-bottom: 300px;" id="home" data-aos="fade-down">
-          
+    <main style="margin-top: 130px;" >
+        <div class="text-right mr-5" >
+            <button class="btn" id ="hamb" style="outline: none;" onclick="document.getElementById('lkj').style.display = 'inline-block'">
+                <i class="fa fa-bars" style="font-size: 30px;font-weight: bold;"></i>
+            </button>
+            </div>
 
-          
-  
-      <div style="margin-left: 350px;">
-            <img class="homeimage" src="./IMG_20200429_104624_977.jpg" width="200px" height="200px" style="border-radius: 50%;">
-      </div>
+        <section class=" row row1" id="home" data-aos="fade-down">
 
-
-    
-
-        <div class="typewriter" style="float: left;margin-left: 30px;padding-top: 25px;" >
-                        <h2 class="card-title" style="font-style: italic;">Hola 👋 
-                     
-
-                        </h2>
-                        
-                     <h2 style="font-style: italic;"> This is sunil Joshi </h2>
-                     <h4 style="margin-left: 3px;font-weight: bold ;color: cadetblue;font-family: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif;" class="card-text" >I am frontend web developer</h4>
-                    
-                       <a  href="#about" style="text-decoration: none;"><button class="btn-3">Know More</button></a>
-                    </div>
-        </section>
-        <section  style="margin-bottom: 180px;" id="myservice" data-aos="fade-out">
             
-            <div class="container-fluid" >
-                <h1 class="contact mb-5"> My Services <br>
-                <i style="font-size: 50px;" class=" mt-1 fas fa-chevron-down" arial-hidden="true"></i></h1>
-
-              <div class="vertical"> 
-               <div id="circle1" style="margin-top: 30px;">
-                <div class="line" ></div>
-<div class="content_box">
-    <i class="fa fa-code" aria-hidden="true" style="font-size:2rem"></i>
-    <h2 style="font-style: normal;">Web Development</h2>
-    <p style="font-size: 1.2rem;font-weight: 500;">i can make your static/dynamic<br> website using HTML, CSS(Bootstrap),<br>Js, Angular,React.</p>
-</div>
-               </div>
 
 
-
-            <div id="circle1" style="margin-top: 30px;">
-            <div class="line2"></div>
-            <div class="content_box2">
-                <i class="fa fa-mobile" aria-hidden="true" style="font-size:2rem"></i>
-                <h2 style="font-style: normal;">Responsive Web Design</h2>
-                <p style="font-size: 1.2rem;font-weight: 500;">Let me take care of mobile responsiveness for you and provide a high-quality product for your business! i have made many rwd(responsive web design ) which are exquisite. </p>
-            </div>
+            <div >
+                <img class="introimage" src="./IMG_20200429_104624_977.jpg" width="200px" height="200px"
+                    style="border-radius: 50%;">
             </div>
 
 
-            <div id="circle1" style="margin-top: 30px;">
-<div class="line"></div>
-            <div class="content_box">
-                <i class="fa fa-file-code-o" aria-hidden="true" style="font-size:2rem"></i>
-                <h2 style="font-style: normal;">Figma to HTML</h2>
-              
-                <p  style="font-size: 1.2rem;font-weight: 500;">i can convert your photoshop,figma design(template) or other format design templates into a pixel-perfect HTML/CSS/Js</p>
-            </div>
-           
-            </div>
-</div>
-              
+
+
+            <div class="typewriter mob1" style="float: left;margin-left: 30px;padding-top: 25px;">
+                <h2 class="card-title" style="font-style: italic;">Hola 👋
+
+
+                </h2>
+
+                <h2 style="font-style: italic;"> This is sunil Joshi </h2>
+                <h4 style="margin-left: 3px;color: cadetblue;"
+                    class="card-text">I am frontend web developer</h4>
+
+                <a href="#about" style="text-decoration: none;"><button class="btn-3">Know More</button></a>
             </div>
         </section>
-        <section style="margin-bottom: 200px;" id="projects" data-aos="flip-left">
-       <div class="container-fluid">
-           <h1 class="contact">Projects <br>
-        <i style="font-size: 50px;" class=" mt-1 fas fa-chevron-down" arial-hidden="true"></i></h1>
-    
+        <section class="service" id="myservice" data-aos="fade-out">
 
-       <div class="row mt-5">
-<div class="ml-3 col-sm-5">
-<img src="./Screenshot (698).png" width="500px" height="300px">
-</div>
-<div class="ml-1 col-sm-6">
-<h2 class="head">Covid19 Angular Web Application</h2>
-<p style="font-size:1.4rem;font-weight: 450;">In this web app user can get covid19 data of any country, state or district with 
-    updated time and helpline number.Covid19 data is in visualize form for better
-     understanding.There is also symptomps,precautions and treatments for covid19 disease.This app
-      is responsiveness so user can use it in mobile, tablet and pc. This app is build using angular 9 framework.
-    <br>
-<a href="https://iamsunil25.github.io/covid19-Angular-web/" target="_blank" style="text-decoration: none;"> 
-    https://iamsunil25.github.io/covid19-Angular-web/</a></p>
+            <div class="container-fluid">
+              
+                <h1 class="contact mb-5"> My Services <br>
+                    <i style="font-size: 50px;" class=" mt-1 fas fa-chevron-down" arial-hidden="true"></i>
+                </h1>
 
-</div>
-</div>
-        </div>
+                <div class="vertical" id="vertical"  >
+                    <div id="circle2" class="circle1" style="margin-top: 30px;">
+                        <div class="line" id = "line"></div>
+                        <div class="content_box">
+                            <i class="fa fa-code" aria-hidden="true" style="font-size:2rem"></i>
+                            <h2 style="font-style: normal;">Web Development</h2>
+                            <p style="font-size: 1.2rem;font-weight: 500;">i can make your static/dynamic<br> website
+                                using HTML, CSS(Bootstrap),<br>Js, Angular,React.</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class = "circle1" id="circle1" style="margin-top: 30px;">
+                        <div class="line2" id = "line2"></div>
+                        <div class="content_box2">
+                            <i class="fa fa-mobile" aria-hidden="true" style="font-size:2rem"></i>
+                            <h2 style="font-style: normal;">Responsive Web Design</h2>
+                            <p style="font-size: 1.2rem;font-weight: 500;">Let me take care of mobile responsiveness for
+                                you and provide a high-quality product for your business! i have made many
+                                rwd(responsive web design ) which are exquisite. </p>
+                        </div>
+                    </div>
+
+
+                    <div id="circle3" class="circle1" style="margin-top: 30px;">
+                        <div class="line" id="line3"></div>
+                        <div class="content_box3">
+                            <i class="fa fa-file-code-o" aria-hidden="true" style="font-size:2rem"></i>
+                            <h2 style="font-style: normal; ">Figma to HTML</h2>
+
+                            <p style="font-size: 1.2rem;font-weight: 500;">i can convert your photoshop,figma
+                                design(template) or other format design templates into a pixel-perfect HTML/CSS/Js</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section  id="projects" data-aos="flip-left">
+            <div class="container-fluid">
+                <h1 class="contact" style="margin-bottom: 50px;">Projects <br>
+                    <i style="font-size: 50px;" class=" mt-1 fas fa-chevron-down" arial-hidden="true"></i>
+                </h1>
+
+
+                <div class="row mt-5" style="margin-bottom: 100px;">
+                    <div class="ml-3 col-sm-5">
+                        <img src="./Screenshot (698).png" class="covidimage">
+                    </div>
+                    <div class="ml-3 col-sm-5">
+                        <h2 class="head">Covid19 Angular Web Application</h2>
+                        <p style="font-size:1.4rem;font-weight: 450;">In this web app user can get covid19 data of any
+                            country, state or district with
+                            updated time and helpline number.Covid19 data is in visualize form for better
+                            understanding.There is also symptomps,precautions and treatments for covid19 disease.This
+                            app
+                            is responsiveness so user can use it in mobile, tablet and pc. This app is build using
+                            angular 9 framework.
+                            <br>
+                            <a href="https://iamsunil25.github.io/covid19-Angular-web/" target="_blank"
+                                style="text-decoration: none;word-wrap: break-word;">
+                                https://iamsunil25.github.io/covid19-Angular-web/</a>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="skills" data-aos="flip-right">
-        <div class="container-fluid">
-            <h1 class="contact">Skills<br>
-            <i style="font-size: 50px;" class=" mt-1 fas fa-chevron-down" arial-hidden="true"></i> </h1>
-        </div>
-        <div class="container" style="display: flex;flex-wrap: wrap;justify-content: center;">
-<div class="m-4" style="width: 150px;height: 150px;background-color: rgb(100, 100, 184);border-radius: 50%;border: 5px dotted black;">
-<h3 style="color: whitesmoke;text-align: center;padding-top: 50px;">HTML</h3>
-</div>
-<div class="m-4 " style="width: 150px;height: 150px;background-color: rgb(100, 100, 184);border-radius: 50%;border: 5px dotted black;">
-    <h3 style="color: whitesmoke;text-align: center;padding-top: 50px;">CSS</h3>
-</div>
-<div class="m-4 "
-    style="width: 150px;height: 150px;background-color: rgb(100, 100, 184);border: 5px dotted black;border-radius: 50%;">
-    <h3 style="color: whitesmoke;text-align: center;padding:auto;padding-top: 50px;">Sass</h3>
-</div>
-<div class="m-4 "
-    style="width: 150px;height: 150px;background-color: rgb(100, 100, 184);border: 5px dotted black;border-radius: 50%;">
-    <h3 style="color: whitesmoke;text-align: center;padding:auto;padding-top: 50px;">Bootstrap</h3>
-</div>
-<div class="m-4 " style="width: 150px;height: 150px;background-color: rgb(100, 100, 184);border-radius: 50%;border: 5px dotted black;">
-    <h3 style="color: whitesmoke;text-align: center;padding-top: 50px;">Javascript</h3>
-</div>
-<div class="m-4 " style="width: 150px;height: 150px;background-color: rgb(100, 100, 184);border: 5px dotted black;border-radius: 50%;">
-    <h3 style="color: whitesmoke;text-align: center;padding:auto;padding-top: 50px;">Typescript</h3>
-</div>
-<div class="m-4 "
-    style="width: 150px;height: 150px;background-color: rgb(100, 100, 184);border: 5px dotted black;border-radius: 50%;">
-    <h3 style="color: whitesmoke;text-align: center;padding:auto;padding-top: 50px;">Angular</h3>
-</div>
-<div class="m-4 "
-    style="width: 150px;height: 150px;background-color: rgb(100, 100, 184);border: 5px dotted black;border-radius: 50%;">
-    <h3 style="color: whitesmoke;text-align: center;padding:auto;padding-top: 35px;">Angular Material</h3>
-</div>
-<div class="m-4 "
-    style="width: 150px;height: 150px;background-color: rgb(100, 100, 184);border: 5px dotted black;border-radius: 50%;">
-    <h3 style="color: whitesmoke;text-align: center;padding:auto;padding-top: 50px;">Core Java</h3>
-</div>
-<div class="m-4 "
-    style="width: 150px;height: 150px;background-color: rgb(100, 100, 184);border: 5px dotted black;border-radius: 50%;">
-    <h3 style="color: whitesmoke;text-align: center;padding:auto;padding-top: 50px;">SQL</h3>
-</div>
-<div class="m-4 "
-    style="width: 150px;height: 150px;background-color: rgb(100, 100, 184);border: 5px dotted black;border-radius: 50%;">
-    <h3 style="color: whitesmoke;text-align: center;padding:auto;padding-top: 50px;">git</h3>
-</div>
-
-        </div>
-        </section>
-        <section id="resume" data-aos="zoom-in"> 
-      <div class="container ">
-            <h1 class="contact mt-5"> Resume <br>
-            <i style="font-size: 50px;" class="mt-1 fas fa-chevron-down" arial-hidden="true"></i></h1>
-
-<div style="display: flex;justify-content: center;">
-
-        <a href="./Sunil's Resume (2).pdf" download="picture"> <img src="./0001.jpg" width="700px" height="800px"></a>
-           
-            
+            <div class="container-fluid">
+                <h1 class="contact" style="margin-bottom: 50px;">Skills<br>
+                    <i style="font-size: 50px;" class=" mt-1 fas fa-chevron-down" arial-hidden="true"></i>
+                </h1>
             </div>
-    </div>
+            <div class="container" style="display: flex;flex-wrap: wrap;justify-content: center;">
+                <div class="m-4"
+                    style="width: 150px;height: 150px;background-color: rgb(100, 100, 184);border-radius: 50%;border: 5px dotted black;">
+                    <h3 style="color: whitesmoke;text-align: center;padding-top: 50px;">HTML</h3>
+                </div>
+                <div class="m-4 "
+                    style="width: 150px;height: 150px;background-color: rgb(100, 100, 184);border-radius: 50%;border: 5px dotted black;">
+                    <h3 style="color: whitesmoke;text-align: center;padding-top: 50px;">CSS</h3>
+                </div>
+                <div class="m-4 "
+                    style="width: 150px;height: 150px;background-color: rgb(100, 100, 184);border: 5px dotted black;border-radius: 50%;">
+                    <h3 style="color: whitesmoke;text-align: center;padding:auto;padding-top: 50px;">Sass</h3>
+                </div>
+                <div class="m-4 "
+                    style="width: 150px;height: 150px;background-color: rgb(100, 100, 184);border: 5px dotted black;border-radius: 50%;">
+                    <h3 style="color: whitesmoke;text-align: center;padding:auto;padding-top: 50px;">Bootstrap</h3>
+                </div>
+                <div class="m-4 "
+                    style="width: 150px;height: 150px;background-color: rgb(100, 100, 184);border-radius: 50%;border: 5px dotted black;">
+                    <h3 style="color: whitesmoke;text-align: center;padding-top: 50px;">Javascript</h3>
+                </div>
+                <div class="m-4 "
+                    style="width: 150px;height: 150px;background-color: rgb(100, 100, 184);border: 5px dotted black;border-radius: 50%;">
+                    <h3 style="color: whitesmoke;text-align: center;padding:auto;padding-top: 50px;">Typescript</h3>
+                </div>
+                <div class="m-4 "
+                    style="width: 150px;height: 150px;background-color: rgb(100, 100, 184);border: 5px dotted black;border-radius: 50%;">
+                    <h3 style="color: whitesmoke;text-align: center;padding:auto;padding-top: 50px;">Angular</h3>
+                </div>
+                <div class="m-4 "
+                    style="width: 150px;height: 150px;background-color: rgb(100, 100, 184);border: 5px dotted black;border-radius: 50%;">
+                    <h3 style="color: whitesmoke;text-align: center;padding:auto;padding-top: 35px;">Angular Material
+                    </h3>
+                </div>
+                <div class="m-4 "
+                    style="width: 150px;height: 150px;background-color: rgb(100, 100, 184);border: 5px dotted black;border-radius: 50%;">
+                    <h3 style="color: whitesmoke;text-align: center;padding:auto;padding-top: 50px;">Core Java</h3>
+                </div>
+                <div class="m-4 "
+                    style="width: 150px;height: 150px;background-color: rgb(100, 100, 184);border: 5px dotted black;border-radius: 50%;">
+                    <h3 style="color: whitesmoke;text-align: center;padding:auto;padding-top: 50px;">SQL</h3>
+                </div>
+                <div class="m-4 "
+                    style="width: 150px;height: 150px;background-color: rgb(100, 100, 184);border: 5px dotted black;border-radius: 50%;">
+                    <h3 style="color: whitesmoke;text-align: center;padding:auto;padding-top: 50px;">git</h3>
+                </div>
+
+            </div>
         </section>
-        <section class=" mt-5 css-selector! "  id="about" data-aos ="fade-out">
+        <section class="mb-5" id="resume" data-aos="zoom-in">
+            <div class="container ">
+                <h1 class="contact mt-5" style="margin-bottom: 50px;"> Resume <br>
+                    <i style="font-size: 50px;" class="mt-1 fas fa-chevron-down" arial-hidden="true"></i>
+                </h1>
+
+                <div style="display: flex;justify-content: center;">
+
+                    <a href="./Sunil's Resume (2).pdf" download="picture"> <img src="./my resume pic.jpg" width="100%"
+                            height="auto"></a>
+
+
+                </div>
+            </div>
+        </section>
+        <section class=" mt-5 mb-5" class ="row1" id="about" data-aos="fade-out">
             <div class="container ">
                 <h1 class="contact mt-5">About Me <br>
-                <i style="font-size: 50px;" class="mt-1 fas fa-chevron-down" arial-hidden="true"></i></h1>
-               
+                    <i style="font-size: 50px;" class="mt-1 fas fa-chevron-down" arial-hidden="true"></i>
+                </h1>
+
             </div>
             <div class="row mt-5 mb-5">
-                <div class="col-sm-4 mb-5" style="margin-left: 200px;">
-                    <img src="./IMG_20200429_104624_977.jpg" width="400px" height="400px" style="border-radius: 50%;">
+                <div class="col-sm-5 mb-5 ">
+                    <img src="./IMG_20200429_104624_977.jpg" class="aboutimage" style="border-radius: 50%;">
                 </div>
-                <div class="col-sm-4">
-                    
-     <h1 class="mt-4" style="color: palevioletred;font-family:fantasy;">Snuel dicen "sunil" 👋</h1>
-     
-        <p style="font-size: 1.4rem;font-weight: 450;">
-           I am Sunil Joshi.
-           I am frontend web developer.
-           I am from Jodhpur (Rajasthan), India.
-           I like to build beautifull ui design, web development projects and it's my hobby too.
-           For <b>entertrainment</b> I watch and play football, cricket. I listen espanyol and english songs.
-           I speak marwadi,hindi, english and little bit espanyol.
-        </p>
-   
-    
-    <!-- <button class="btn-33"></button> -->
+                <div class="col-sm-5 mt-5">
+
+                    <h1 class=" aboutdes" style="color: palevioletred;font-family:fantasy;">Snuel dicen "sunil" 👋</h1>
+
+                    <p class="aboutdes" style="font-size: 1.4rem;font-weight: 500;">
+                        I am Sunil Joshi.
+                        I am frontend web developer.
+                        I am from Jodhpur (Rajasthan), India.
+                        I like to build beautifull ui design, web development projects and it's my hobby too.
+                        For <b>entertrainment</b> I watch and play football, cricket. I listen espanyol and english
+                        songs.
+                        I speak marwadi,hindi, english and little bit espanyol.
+                    </p>
+
+
+
                 </div>
             </div>
         </section>
-       <footer class="mt-5 mb-5 " id="contact" data-aos="flip-right">
+        <section class="mt-5 " id="Contact" data-aos="fade-in">
             <div class="container ">
                 <h1 class="contact"> Contact Me <br>
-                <i style="font-size: 50px;" class="mt-1 fas fa-chevron-down" arial-hidden="true"></i> </h1>
+                    <i style="font-size: 50px;" class="mt-1 fas fa-chevron-down" arial-hidden="true"></i>
+                </h1>
             </div>
-            <div class="row mt-5" style="display: flex;justify-content: center;align-items: center;">
-<div class="col-sm-1 hover ">
-    <a href="https://www.linkedin.com/in/iamsunil25/" target="_blank">
-    <img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG29.png" width="105px" height="105px" >
-    <span >Linkedin</span>
-    </a>
-</div>
-<div class="col-sm-1 ml-3 hover ">
-    <a href="https://www.instagram.com/iamsunil25" target="_blank">
-        <img src="https://th.bing.com/th/id/OIP.mdNMeNAxQL1gWv0U3KAe1gHaHZ?pid=ImgDet&rs=1" width="100px" height="100px" style="border-bottom-left-radius: 25%;border-bottom-right-radius: 25%;border-top-left-radius: 25%;border-top-right-radius: 25%;">
-<span >Instagram</span>
-    </a>
-</div>
-<div class="col-sm-1 ml-3 hover">
-    <a href="https://www.github.com/iamsunil25" target="_blank">
-        <img src="https://pngimg.com/uploads/github/github_PNG80.png" width="100px"
-            height="100px">
-            <span >Github</span>
-    </a>
-</div>
-<div class="col-sm-1 ml-3 hover ">
-    <a href="mailto:suniljoshi4984@gmail.com" target="_blank">
-        <img src="https://th.bing.com/th/id/OIP.mQiRjfCSpRXE3PwFpTAqUwHaFj?pid=ImgDet&rs=1" width="100px" height="100px">
-<span >Gmail</span>
-    </a>
-</div>
-<div class="col-sm-1 ml-3 hover " >
-    <a href="https://codepen.io/jsunil_25" target="_blank"  >
-        <img src = "https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png" width="100px"
-            height="100px" style="border-bottom-left-radius: 25%;border-bottom-right-radius: 25%;border-top-left-radius: 25%;border-top-right-radius: 25%;">
-            <span >Codepan</span>
-    </a>
-</div>
-<div class="col-sm-1 ml-3 hover ">
-    <a href="https://dev.to/iamsunil25" target="_blank" style="background: #D2D7D3;">
-        <img src="./dev (2).jpg" width="100px" height="100px">
-        <span>Dev</span>
-    </a>
-</div>
-<div class="col-sm-1 ml-3 hover ">
-    <a href="https://twitter.com/iamsunil25" target="_blank" style="background: #D2D7D3;">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:
+            <div class="row rowfooter mt-5" style="display: flex;justify-content: center;align-items: center;">
+                <div class="col-sm-1 hover ml-2 ">
+                    <a href="https://www.linkedin.com/in/iamsunil25/" target="_blank">
+                        <img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG29.png" width="105px" height="105px">
+                        <span>Linkedin</span>
+                    </a>
+                </div>
+                <div class="col-sm-1 ml-3 hover ">
+                    <a href="https://www.instagram.com/iamsunil25" target="_blank">
+                        <img src="https://th.bing.com/th/id/OIP.mdNMeNAxQL1gWv0U3KAe1gHaHZ?pid=ImgDet&rs=1"
+                            width="100px" height="100px"
+                            style="border-bottom-left-radius: 25%;border-bottom-right-radius: 25%;border-top-left-radius: 25%;border-top-right-radius: 25%;">
+                        <span>Instagram</span>
+                    </a>
+                </div>
+                <div class="col-sm-1 ml-3 hover">
+                    <a href="https://www.github.com/iamsunil25" target="_blank">
+                        <img src="https://pngimg.com/uploads/github/github_PNG80.png" width="100px" height="100px">
+                        <span>Github</span>
+                    </a>
+                </div>
+                <div class="col-sm-1 ml-3 hover ">
+                    <a href="mailto:suniljoshi4984@gmail.com" target="_blank">
+                        <img src="https://th.bing.com/th/id/OIP.mQiRjfCSpRXE3PwFpTAqUwHaFj?pid=ImgDet&rs=1"
+                            width="100px" height="100px">
+                        <span>Gmail</span>
+                    </a>
+                </div>
+                <div class="col-sm-1 ml-3 hover ">
+                    <a href="https://codepen.io/jsunil_25" target="_blank">
+                        <img src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png"
+                            width="100px" height="100px"
+                            style="border-bottom-left-radius: 25%;border-bottom-right-radius: 25%;border-top-left-radius: 25%;border-top-right-radius: 25%;">
+                        <span>Codepan</span>
+                    </a>
+                </div>
+                <div class="col-sm-1 ml-3 hover ">
+                    <a href="https://dev.to/iamsunil25" target="_blank" style="background: #D2D7D3;">
+                        <img src="./dev (2).jpg" width="100px" height="100px">
+                        <span>Dev</span>
+                    </a>
+                </div>
+                <div class="col-sm-1 ml-3 hover ">
+                    <a href="https://twitter.com/iamsunil25" target="_blank" style="background: #D2D7D3;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:
         ANd9GcSmZ9ljoPKbFnG7kx8M-N3RdvXm9lrwxI0SzLhlvMSlVBOAoxLz04nZpx3loan-68vnkUA&usqp=CAU" width="100px"
-            height="100px"
-            style="border-radius: 50%;">
-        <span>Twitter</span>
-    </a>
-</div>
+                            height="100px" style="border-radius: 50%;">
+                        <span>Twitter</span>
+                    </a>
+                </div>
 
 
 
             </div>
-            <div class="container">
+          
+           <br>
+           <br>
+
+           
+                            <a class=" uparrow float-right mr-5" href="#home" style="text-decoration: none;"><i style="font-size: 100px;">&#8593</i></a>
+
+            
+            <div class="container-fluid" style="background:black;height: 200px;" >
                 <!-- <h2  class="mt-5" style="font-weight: bold;font-size: 2rem;color: brown;text-align: right;">Sunil Joshi</h2>
  -->
 
-
-                <h2 class="mt-5 contact" style="font-size: 1.7rem;text-transform: none;" >suniljoshi4984@gmail.com <span></span></h2>
-        <h2  class="contact" style="font-size: 1.7rem;text-transform: none;">Jodhpur (Rajasthan), India  </h2>
+<br>
+                <h2 class="mt-5 contact" style="font-size: 1.7rem;text-transform: none;">suniljoshi4984@gmail.com
+                    <span></span>
+                </h2>
+                <h2 class="contact" style="font-size: 1.7rem;text-transform: none;">Jodhpur (Rajasthan), India </h2>
 
             </div>
-       </footer>
+        </section>
     </main>
-    
- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init({
-        offset:120,
-        duration:1000
+ <script src="portfolio.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 150,
+            duration: 1000
 
-    });
-</script>
+        });
+    </script>
 </body>
+
 </html>
-
-
-
