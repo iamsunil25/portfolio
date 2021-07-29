@@ -224,11 +224,19 @@ a span {
   margin-bottom: 180px;
 }
 .covidimage {
-  height: 305px;
+  margin-top: 45px;
+  height: 300px;
   width: 500px;
 }
 .aboutdes {
   margin-left: 10px;
+}
+.navitemimage {
+  width: 2%;
+  height: 2%;
+}
+.stm {
+  padding-left: 30px;
 }
 @media only screen and (max-width: 800px) and (min-width: 600px) {
   .content_box2 {
@@ -261,8 +269,15 @@ a span {
     width: 300px;
     height: 200px;
   }
+  .stm {
+    padding-left: 0;
+  }
 }
+
 @media only screen and (max-width: 1108px) and (min-width: 800px) {
+  .stm {
+    padding-left: 0;
+  }
   .aboutimage {
     margin-left: 20px;
   }
@@ -278,14 +293,14 @@ a span {
     height: 250px;
   }
 }
-.navitemimage {
-  width: 2%;
-  height: 2%;
-}
+
 @media only screen and (max-width: 600px) {
   li {
     display: block;
     list-style: none;
+  }
+  .stm {
+    padding-left: 0;
   }
 
   li a {
