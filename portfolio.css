@@ -217,6 +217,7 @@ a span {
   width: 400px;
   height: 400px;
   margin-left: 150px;
+  box-shadow: 0px 5px 20px 10px #888888;
 }
 .service {
   margin-bottom: 180px;
@@ -228,7 +229,39 @@ a span {
 .aboutdes {
   margin-left: 10px;
 }
-@media only screen and (max-width: 1108px) and (min-width: 768px) {
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+  .content_box2 {
+    margin-left: 150px;
+  }
+  .content_box3 {
+    margin-left: -300px;
+  }
+  .content_box {
+    margin-left: -300px;
+  }
+  .col-sm-1 {
+    margin: auto;
+  }
+  .aboutimage {
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    margin-top: 130px;
+    box-shadow: 0px 5px 20px 10px #888888;
+  }
+  .aboutdes {
+    margin-left: 50px;
+  }
+  .aboutt {
+    text-align: justify;
+  }
+  .covidimage {
+    margin-top: 80px;
+    width: 300px;
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 1108px) and (min-width: 800px) {
   .aboutimage {
     margin-left: 20px;
   }
@@ -239,7 +272,7 @@ a span {
     text-align: justify;
   }
   .covidimage {
-    margin-top: 20px;
+    margin-top: 50px;
     width: 400px;
     height: 250px;
   }
@@ -248,7 +281,7 @@ a span {
   width: 2%;
   height: 2%;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   li {
     display: block;
     list-style: none;
@@ -293,27 +326,30 @@ a span {
     width: 250px;
     height: 100px;
     margin-top: 160px;
-    margin-left: 110px;
+    margin-left: 20px;
   }
   .service {
     margin-bottom: 220px;
   }
+  .row {
+    width: 99.5%;
+  }
   .content_box {
     display: block;
-    margin-left: 2px;
+    margin-left: 20px;
     width: 200px;
     height: 100px;
     margin-bottom: 10px;
   }
   .content_box3 {
     display: block;
-    margin-left: 2px;
+    margin-left: 20px;
     width: 200px;
     height: 100px;
     margin-top: 220px;
   }
   .aboutdes {
-    margin-left: 8px;
+    padding-left: 0;
   }
   .rowfooter {
     text-align: center;
@@ -322,7 +358,7 @@ a span {
     margin: auto;
   }
   .introimage {
-    margin-left: 100px;
+    margin-left: 30px;
   }
   .row1 {
     padding-bottom: 80px;
@@ -339,9 +375,11 @@ a span {
     font-style: oblique;
   }
   .aboutimage {
-    width: 300px;
-    height: 300px;
-    margin-left: 50px;
+    width: 280px;
+    height: 280px;
+    margin-left: 20px;
+
+    box-shadow: 0px 5px 20px 10px #888888;
   }
   a:hover span {
     visibility: visible;
@@ -371,6 +409,6 @@ a span {
   }
   .uparrow {
     position: absolute;
-    right: -50px;
+    left: -10px;
   }
 }

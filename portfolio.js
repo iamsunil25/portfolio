@@ -50,7 +50,7 @@ function myfunctionn() {
 }
 function media()
 {
-    if(window.screen.width<600)
+    if(window.screen.width<700)
     {
      document.getElementById('line').classList.remove('line')
      document.getElementById('line2').classList.remove('line2')
@@ -63,9 +63,11 @@ function media()
        document.getElementById('home').style.marginTop = '20%';
        document.querySelector('main').style.marginTop = '0px';
       
- 
+        document.getElementById('skj').style.fontSize = '1.5rem'
+        document.getElementById('skjj').style.fontSize = '1.5rem'
+    document.getElementById('contactheader').style.marginLeft = '-15px'
     }
-    if(window.screen.width > 605)
+    if(window.screen.width > 800)
 {
  document.getElementById('hamb').style.display = 'none';
 }
