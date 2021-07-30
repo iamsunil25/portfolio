@@ -75,4 +75,7 @@ function media()
 }
 media()
 
-
+ if(!window.screen.width<700){
+document.querySelector('body').style.overflowX='hidden';
+document.getElementById('up').classList.add('mr-3')
+ }

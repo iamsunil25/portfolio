@@ -238,6 +238,11 @@ a span {
 .stm {
   padding-left: 30px;
 }
+.uparrow {
+  position: relative;
+  left: 0;
+  float: right;
+}
 @media only screen and (max-width: 800px) and (min-width: 600px) {
   .content_box2 {
     margin-left: 150px;
@@ -334,6 +339,7 @@ a span {
     border-bottom: none;
   }
   .covidimage {
+    margin-top: 0px;
     width: 90%;
     height: 95%;
   }
@@ -425,6 +431,7 @@ a span {
   }
   .uparrow {
     position: absolute;
-    left: -10px;
+    left: -5px;
+    float: left;
   }
 }
