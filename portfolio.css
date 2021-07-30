@@ -238,11 +238,11 @@ a span {
 .stm {
   padding-left: 30px;
 }
-.uparrow {
+/* .uparrow {
   position: relative;
   left: 0;
   float: right;
-}
+} */
 @media only screen and (max-width: 800px) and (min-width: 600px) {
   .content_box2 {
     margin-left: 150px;
@@ -429,9 +429,9 @@ a span {
   .hover {
     margin-bottom: 10px;
   }
-  .uparrow {
+  /* .uparrow {
     position: absolute;
     left: 0px;
     float: left;
-  }
+  } */
 }
