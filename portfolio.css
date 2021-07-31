@@ -3,7 +3,9 @@ li {
   list-style: none;
   margin: 18px;
 }
-
+*:focus {
+  outline: none;
+}
 li a {
   font-size: 1.3rem;
   padding-bottom: 14px;
@@ -224,8 +226,8 @@ a span {
   margin-bottom: 180px;
 }
 .covidimage {
-  margin-top: 45px;
-  height: 300px;
+  margin-top: 60px;
+  height: 270px;
   width: 500px;
 }
 .aboutdes {
@@ -340,8 +342,8 @@ a span {
   }
   .covidimage {
     margin-top: 0px;
-    width: 90%;
-    height: 95%;
+    width: 92%;
+    height: 99%;
   }
   .content_box2 {
     display: block;
@@ -399,7 +401,7 @@ a span {
   .aboutimage {
     width: 280px;
     height: 280px;
-    margin-left: 20px;
+    margin-left: 40px;
 
     box-shadow: 0px 5px 20px 10px #888888;
   }
@@ -432,6 +434,10 @@ a span {
   /* .uparrow {
     position: absolute;
     left: 0px;
+    top: 60px;
     float: left;
+  } */
+  /* .head p {
+    text-align: center;
   } */
 }
