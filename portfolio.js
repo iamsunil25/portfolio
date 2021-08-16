@@ -69,8 +69,7 @@ function media()
   document.getElementById('about3').classList.add('mt-4')
 
   document.getElementById('about2').classList.add('mt-4')
-       document.getElementById('hidden1').style.display='none';
-      document.getElementById('hidden2').style.display='none';
+      
 
        document.getElementById('lkj').style.display = 'none';
        document.getElementById('home').style.marginTop = '20%';
@@ -96,6 +95,4 @@ media()
 
  if(!window.screen.width<700){
 document.querySelector('body').style.overflowX='hidden';
-  document.getElementById('up').style.display = 'none';
-// document.getElementById('up').classList.add('mr-3')
  }
