@@ -12,7 +12,10 @@ li a {
   text-align: center;
   font-weight: bold;
 }
-
+  .clearfix > .pull-right {
+    position: absolute;
+    right: 10px;
+  }
 img {
   padding: 2px;
 }
