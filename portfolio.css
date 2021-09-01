@@ -321,6 +321,10 @@ a span {
     text-align: center;
     margin-bottom: 30px;
   }
+    .clearfix > .pull-right {
+    position: absolute;
+    right: 0;
+  }
   nav {
     padding-top: 30px;
     text-align: center;
