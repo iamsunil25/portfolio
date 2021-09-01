@@ -95,4 +95,5 @@ media()
 
  if(!window.screen.width<700){
 document.querySelector('body').style.overflowX='hidden';
+   document.getElementById('up').style.fontSize = '80px';
  }
