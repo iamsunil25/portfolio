@@ -349,8 +349,8 @@ a span {
   }
   .covidimage {
     margin-top: 0px;
-    width: 92%;
-    height: 99%;
+    width: 100%;
+    height: auto;
   }
   .content_box2 {
     display: block;
