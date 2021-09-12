@@ -68,7 +68,7 @@ html {
   width: 120px;
   border: 5px;
   padding: 10px;
-  outline: #1606f8;
+  outline: none;
   background: #1606f8;
   font-weight: bold;
 }
@@ -83,7 +83,7 @@ html {
   width: 120px;
   border: 5px;
   padding: 10px;
-  outline: #ff96ad;
+  outline: none;
   font-weight: bold;
   background: #ff96ad;
 }
