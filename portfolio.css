@@ -3,6 +3,13 @@ li {
   list-style: none;
   margin: 18px;
 }
+#tilt {
+  transition: box-shadow 0.1s, transform 0.1s;
+}
+#tilt:hover {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
 *:focus {
   outline: none;
 }
@@ -12,10 +19,10 @@ li a {
   text-align: center;
   font-weight: bold;
 }
-  .clearfix > .pull-right {
-    position: absolute;
-    right: 10px;
-  }
+.clearfix > .pull-right {
+  position: absolute;
+  right: 10px;
+}
 img {
   padding: 2px;
 }
@@ -61,12 +68,28 @@ html {
   width: 120px;
   border: 5px;
   padding: 10px;
-  outline: #ff96ad;
+  outline: #1606f8;
+  background: #1606f8;
   font-weight: bold;
 }
 
 .btn-3:hover {
   box-shadow: inset -10.5em 0 0 0 #ff96ad, inset 10.5em 0 0 0 #ff96ad;
+}
+.btn-4 {
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.7s ease-in;
+  width: 120px;
+  border: 5px;
+  padding: 10px;
+  outline: #ff96ad;
+  font-weight: bold;
+  background: #ff96ad;
+}
+
+.btn-4:hover {
+  box-shadow: inset -10.5em 0 0 0 #1606f8, inset 10.5em 0 0 0 #1606f8;
 }
 
 .vertical {
@@ -232,6 +255,7 @@ a span {
   margin-top: 60px;
   height: 270px;
   width: 500px;
+  box-shadow: 0px 5px 20px 10px #888888;
 }
 .aboutdes {
   margin-left: 10px;
@@ -321,7 +345,7 @@ a span {
     text-align: center;
     margin-bottom: 30px;
   }
-    .clearfix > .pull-right {
+  .clearfix > .pull-right {
     position: absolute;
     right: 0;
   }
@@ -356,7 +380,7 @@ a span {
     display: block;
     width: 250px;
     height: 100px;
-    margin-top: 160px;
+    margin-top: 200px;
     margin-left: 20px;
   }
   .service {
@@ -377,7 +401,7 @@ a span {
     margin-left: 20px;
     width: 200px;
     height: 100px;
-    margin-top: 220px;
+    margin-top: 225px;
   }
   .aboutdes {
     padding-left: 0;
