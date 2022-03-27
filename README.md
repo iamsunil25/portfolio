@@ -9,7 +9,6 @@
     1 fork this repo
     2 do your things for improving this portfolio
     3 make pull request
-    4 I will accept your pull request if the pull request not contains unnecessary code
+    4 I will accept your pull request if the pull request not contains unnecessary code  -->
 
-
-   #learnTogether #loveJS #comfortableWithOnlyJS -->
+   #learnTogether #loveJS #comfortableWithOnlyJS 
