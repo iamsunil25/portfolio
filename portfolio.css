@@ -5,7 +5,7 @@ li {
 }
 
 #upArrow i {
-    transform: rotate(-67deg);
+    transform: rotate(-45deg);
     position: absolute;
     font-size: 40px;
     margin: -13px;
