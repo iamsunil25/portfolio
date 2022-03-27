@@ -5,7 +5,7 @@ li {
 }
 
 #upArrow i {
-    transform: rotate(-45deg);
+    transform: rotate(-67deg);
     position: absolute;
     font-size: 40px;
     margin: -13px;
@@ -428,7 +428,6 @@ a span {
     li {
         display: block;
         list-style: none;
-        margin: 0;
     }
     .stm {
         padding-left: 0;
@@ -446,7 +445,6 @@ a span {
         right: 0;
     }
     nav {
-        padding-top: 30px;
         text-align: center;
         padding-top: 13%;
         position: relative;
