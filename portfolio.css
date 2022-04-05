@@ -12,7 +12,13 @@ li {
     margin: -13px;
     display: none;
 } */
-
+.top-arrow{
+    font-weight: 100;
+    display: inline-block;
+    transform: rotate(-45deg);
+    width: auto;
+    height: 40px;
+}
 .crossIcon {
     position: absolute;
     left: 10px;
@@ -431,6 +437,15 @@ a span {
     .stm {
         padding-left: 0;
     }
+    .top-arrow{
+        height: 35px;
+    }
+
+    #upArrow {
+        width: 35px;
+        height: 35px;  
+    }
+
     li a {
         font-size: 1.3rem;
         font-family: Arial, Helvetica, sans-serif;
