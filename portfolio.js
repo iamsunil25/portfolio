@@ -101,8 +101,10 @@ introducImage.addEventListener("mouseup", function() {
 function navbarDisplay() {
     if (document.documentElement.scrollTop > 200 && window.screen.width > 700) {
         navbar.style.display = "block";
-    } else {
-        navbar.style.display = "none";
+    }
+     else if (window.screen.width > 700) {
+             navbar.style.display = "none";
+        
     }
 }
 
