@@ -45,12 +45,21 @@ function handleMobileResponsiveness() {
         document.getElementById("about3").classList.remove("mt-5");
         document.getElementById("about3").classList.add("mt-4");
         document.getElementById("about2").classList.add("mt-4");
-        document.getElementById("navbar").style.display = "none";
         document.getElementById("home").style.marginTop = "20%";
         document.querySelector("main").style.marginTop = "0px";
+        document.getElementById("navbar").style.display = "none";
         document.getElementById("myEmail").style.fontSize = "1.4rem";
         document.getElementById("myHometown").style.fontSize = "1.4rem";
         document.getElementById("contactheader").style.marginLeft = "-15px";
+        document.getElementById("crossIcon").style.display="none"
+//         if(document.getElementById("navbar"))
+// {
+
+//   let navbar = document.getElementById("navbar").style
+//   navbar.display="flex";
+//   navbar.position="fixed"
+//   console.log(document.getElementsByTagName("li").classList);
+// }       
     }
 
     if (window.screen.width > 800) {
@@ -101,6 +110,7 @@ introducImage.addEventListener("mouseup", function() {
 function navbarDisplay() {
     if (document.documentElement.scrollTop > 200 && window.screen.width > 700) {
         navbar.style.display = "block";
+
     }
      else if (window.screen.width > 700) {
              navbar.style.display = "none";
@@ -111,7 +121,7 @@ function navbarDisplay() {
 //this is  used for show arrow icon when scrolltop >300
 function upArrowDispaly() {
     let upArrowIcon = document.getElementById("upArrow");
-    if (document.documentElement.scrollTop > 400) {
+    if (document.documentElement.scrollTop > 500) {
         upArrowIcon.style.display = "block";
         upArrowIcon.children[0].style.display = "inline-block";
     } else {
@@ -136,13 +146,32 @@ crossIcon.addEventListener("click", () => {
 // toggling sidebar
 hamburgericon.addEventListener("click", () => {
     if (navbar.style.display == "none") {
-        navbar.style.display = "inline-block";
-    } else {
+        // let navbar = document.getElementById("navbar").style
+        navbar.style.display="block"
+        navbar.style.position="fixed"
+let body = document.querySelector("body")
+if(body && body.classList){
+body.classList.add("stop-scrolling")
+}
+
+    }
+     else {
         navbar.style.display = "none";
     }
 });
 
 //for hiding sidebar
+
+const navlist2 = document.querySelectorAll("nav ul li a");
+navlist2.forEach((li) => {
+    li.addEventListener("click",()=>{
+        navbar.style.display="none";
+        let body = document.querySelector("body")
+if(body && body.classList){
+body.classList.remove("stop-scrolling")
+}
+    })
+});
 // document.addEventListener("click", (event) => {
 //     const element = document.getElementById("navbar");
 //     const closest = event.target.closest(`.${element.id}`);

@@ -374,6 +374,8 @@ a span {
 }
 
 @media only screen and (max-width: 800px) and (min-width: 600px) {
+ 
+    
     .content_box2 {
         margin-left: 150px;
     }
@@ -430,9 +432,30 @@ a span {
 }
 
 @media only screen and (max-width: 600px) {
+    .stop-scrolling {
+        height: 100%;
+        overflow: hidden;
+      }
+      
+    .active{
+        padding: none;
+        border-radius: none;
+        box-shadow: none;
+        transition: none;   
+    }
+    
     li {
         display: block;
         list-style: none;
+    margin:18px;
+    }
+    ul {
+        padding: inherit;
+        margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
     }
     .stm {
         padding-left: 0;
@@ -446,25 +469,30 @@ a span {
         height: 35px;  
     }
 
+
     li a {
         font-size: 1.3rem;
         font-family: Arial, Helvetica, sans-serif;
         color: royalblue;
-        padding-bottom: 50px;
+        /* padding-bottom: 50px; */
+        padding-bottom: 0;
         text-align: center;
-        margin-bottom: 30px;
-    }
+        margin: 50px;
+        /* margin-bottom: 30px; */
+
+        }
     .clearfix>.pull-right {
         position: absolute;
         right: 0;
     }
     nav {
         text-align: center;
-        padding-top: 13%;
+        padding-top:0;
         position: relative;
         justify-content: center;
         align-items: center;
-        z-index: 1;
+        z-index: 99999;
+       
         width: 100%;
         height: 100%;
     }
