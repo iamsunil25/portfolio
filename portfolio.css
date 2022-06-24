@@ -4,10 +4,6 @@ li {
     margin: 18px;
 }
 
-button:focus{
-outline:none
-}
-
 
 /* #upArrow i {
     transform: rotate(-45deg);
@@ -146,11 +142,13 @@ html {
     overflow: hidden;
     transition: 0.7s ease-in;
     width: 120px;
-    border: 5px;
+    border: 0;
     padding: 10px;
-    outline: #1606f8;
     background: #1606f8;
     font-weight: bold;
+}
+.btn-3:focus{
+	outline: none;
 }
 
 .btn-3:hover {
@@ -162,11 +160,14 @@ html {
     overflow: hidden;
     transition: 0.7s ease-in;
     width: 120px;
-    border: 5px;
+    border: 0;
     padding: 10px;
-    outline: #ff96ad;
     font-weight: bold;
     background: #ff96ad;
+}
+
+.btn-4:focus{
+	outline: none;
 }
 
 .btn-4:hover {
