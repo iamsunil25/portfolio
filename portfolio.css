@@ -4,6 +4,10 @@ li {
     margin: 18px;
 }
 
+button:focus{
+outline:none
+}
+
 
 /* #upArrow i {
     transform: rotate(-45deg);
