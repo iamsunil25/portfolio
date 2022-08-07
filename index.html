@@ -18,7 +18,7 @@
     <!-- navbar -->
     <header>
         <nav class="shadow-lg pb-3 css-selector" id="navbar" style="display: none;">
-            <i class="fa fa-times crossIcon" id="crossIcon"></i>
+            <img src="./images/close.svg" alt="close icon" class="crossIcon" id="crossIcon">
             <ul>
                 <li class="home">
                     <a href="#home" style="text-decoration: none"><img src="./images/icons/navbar_icon/home.svg" alt="home icon" class="navitemimage" />Home</a>
@@ -37,7 +37,7 @@
                 </li>
                 <li class="about">
                     <a href="#about" style="text-decoration: none">
-                        <img src="./images/icons/navbar_icon/aboutus.png" class="navitemimage" alt="about icon" />About</a>
+                        <img src="./images/icons/navbar_icon/aboutus.svg" class="navitemimage" alt="about icon" />About</a>
                 </li>
                 <li class="Contact">
                     <a href="#Contact" style="text-decoration: none"><img alt="contact us icon" src="./images/icons/navbar_icon/contact.svg" class="navitemimage" />Contact</a>
@@ -108,7 +108,7 @@
                   style="font-size: 2rem"
                 ></i>
                 <h2 style="font-style: normal">Web Development</h2>
-                <p style="font-size: 1.2rem; font-weight: 500">
+                <p style="font-size: 1.2rem; font-weight: 500;color: #565656;">
                   I can make your static/dynamic<br />
                   website using HTML, CSS(Bootstrap),<br />Javascript, Angular,
                   React.
@@ -125,7 +125,7 @@
                   style="font-size: 2rem"
                 ></i>
                 <h2 style="font-style: normal">Responsive Web Design</h2>
-                <p style="font-size: 1.2rem; font-weight: 500">
+                <p style="font-size: 1.2rem; font-weight: 500;color: #565656;">
                   Let me take care of mobile responsiveness for you and provide
                   a high-quality product for your business! I have made many
                   rwd(responsive web design) which are exquisite.
@@ -133,7 +133,7 @@
               </div>
             </div>
 
-            <div id="circle3" class="circle1" style="margin-top: 30px">
+            <div id="circle3" class="circle1" style="margin-top: 30px;">
               <div class="line" id="line3"></div>
               <div class="content_box3">
                 <i
@@ -143,7 +143,7 @@
                 ></i>
                 <h2 style="font-style: normal">Figma to HTML</h2>
 
-                <p style="font-size: 1.2rem; font-weight: 500">
+                <p style="font-size: 1.2rem; font-weight: 500;color: #565656;">
                   I can convert your photoshop, figma design(template) or other
                   format design templates into a pixel-perfect HTML, CSS, JS
                 </p>
@@ -175,7 +175,7 @@
             </div>
             <div class="col-sm-6 pl-4">
               <h2 class="head mt-3 pl-2">Covid19 Angular Web Application</h2>
-              <p style="font-size: 1.4rem; font-weight: 500">
+              <p style="font-size: 1.4rem; font-weight: 500;color: #565656;">
                 In this web app user can get covid19 data of any country, state
                 or district with updated time and helpline number.Covid19 data
                 is in visualize form for better understanding.There is also
@@ -186,9 +186,9 @@
                 <a
                   href="https://iamsunil25.github.io/covid19-Angular-web/"
                   target="_blank"
-                  style="text-decoration: none; word-wrap: break-word"
+                  style="text-decoration: none; word-wrap: break-word;color: royalblue !important;"
                 >
-                  https://iamsunil25.github.io/covid19-Angular-web/</a
+                  Preview</a
                 >
               </p>
             </div>
@@ -317,20 +317,21 @@
                 </div>
 
                 <div class="col-sm-5" id="about3">
-                    <h1 class="aboutdes" style="color: rgb(216, 133, 160); font-family: fantasy">
-                        Sunil Joshi
-                    </h1>
+                    <h2 class="aboutdes" style="color:cadetblue">
+                    Frontend Web Developer
+                    </h2>
 
-                    <p class="aboutdes" style="font-size: 1.4rem; font-weight: 500">
-                        I am Sunil Joshi. I am web developer at Squarebits Jodhpur. I am from Jodhpur (Rajasthan), India. I build web apps in React and Angular. For <b>entertrainment</b> I watch and play football, cricket. I listen espanyol and english
-                        songs. I speak marwadi, hindi, english and little bit espanyol.
+                    <p class="aboutdes" style="font-size: 1.4rem; font-weight: 500;color: #565656;">
+                        I am Frontend Web Developer at Squarebits Jodhpur.Born and brought up in Jodhpur (Rajasthan), India. 
+						 I make web apps in React and Angular. In my free time I watch football and listen english
+                        songs. I speak hindi, english.
                     </p>
                 </div>
             </div>
         </section>
 
         <!--     contact section     -->
-        <section class="mt-5" id="Contact" data-aos="fade-out">
+        <section class=" mt-5 mb-5" id="Contact" data-aos="fade-out">
             <div class="container">
                 <h1 class="contact" id="contactheader">
                     Contact Me <br />
@@ -387,13 +388,16 @@
             <br />
             <br />
 
-            <div class="container-fluid" style="background: black; height: 200px">
-                <br />
-                <h2 class="mt-5 myEmail" id="myEmail">
-                    suniljoshi4984@gmail.com
+            <div style="display: block;margin-top: 100px;">
+				<h2 class="mt-3 myPhone" id="myPhone">
+					<img src="./images/icons/contact_me/phone.svg"  alt="phone icon" width="25px" height="25px">  +919057553147
                 
                 </h2>
-                <h2 class="myHometown" id="myHometown">Jodhpur (Rajasthan), India</h2>
+                <h2 class="mt-3 myEmail" id="myEmail">
+					<img src="./images/icons/contact_me/gmail.svg"  alt="gmail  icon" width="25px" height="25px">  suniljoshi4984@gmail.com
+                
+                </h2>
+                <h2 class="myHometown " id="myHometown"><img src="./images/icons/contact_me/location.svg" alt="address icon" width="25px" height="25px">  Jodhpur (Rajasthan), India</h2>
             </div>
         </section>
 

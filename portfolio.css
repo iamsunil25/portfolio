@@ -23,9 +23,9 @@ li {
 .crossIcon {
     position: absolute;
     left: 10px;
-    top: 25px;
-    font-size: 45px;
-    font-weight: bold;
+    top: 30px;
+ width: 35px;
+height: 35px;
     cursor: pointer;
 }
 
@@ -40,7 +40,7 @@ li {
     transform: rotate(45deg);
     text-align: center;
     z-index: 9999999;
-    background: blue;
+    background: cadetblue;
     padding: 0px;
 }
 
@@ -51,6 +51,7 @@ li {
 	text-align: center;
 	font-size: 16px;
 	font-weight: 500;
+	color: #565656;
 }
 
 #introducImage:hover {
@@ -240,48 +241,45 @@ html {
     display: block;
     margin-left: -400px;
 }
+a{
+	color: cadetblue !important;
+}
+
 
 .contact {
-    background: linear-gradient(rgb(230, 91, 5) 0%, rgb(168, 89, 37) 100%);
+    /* background: linear-gradient(rgb(230, 91, 5) 0%, rgb(168, 89, 37) 100%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    background-clip: text;
+    background-clip: text; */
     font-size: 2rem;
     text-align: center;
     font-weight: bold;
-    text-transform: uppercase;
-    font-style: oblique;
+	color: cadetblue;
+    /* text-transform: uppercase; */
+    /* font-style: oblique; */
 }
 
 .content_box h2 {
-    background: linear-gradient( to right, rgba(249, 105, 14, 1) 0%, rgba(102, 51, 153, 1) 100%);
+    /* background: linear-gradient( to right, rgba(249, 105, 14, 1) 0%, rgba(102, 51, 153, 1) 100%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    background-clip: text;
+    background-clip: text; */
+	color: cadetblue;
     font-size: 2rem;
 }
 
 .content_box2 h2 {
-    background: linear-gradient( to right, rgba(249, 105, 14, 1) 0%, rgba(102, 51, 153, 1) 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
+	color: cadetblue;
     font-size: 2rem;
 }
 
 .content_box3 h2 {
-    background: linear-gradient( to right, rgba(249, 105, 14, 1) 0%, rgba(102, 51, 153, 1) 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
+	color: cadetblue;
     font-size: 2rem;
 }
 
 .head {
-    background: linear-gradient( to right, rgba(249, 105, 14, 1) 0%, rgba(102, 51, 153, 1) 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
+	color: cadetblue;
     font-size: 2rem;
 }
 
@@ -335,8 +333,8 @@ a span {
 }
 
 .aboutimage {
-    width: 400px;
-    height: 400px;
+    width: 66%;
+    height: 95%;
     margin-left: 150px;
     box-shadow: 0px 5px 20px 10px #888888;
 }
@@ -347,8 +345,8 @@ a span {
 
 .covidimage {
     margin-top: 60px;
-    height: 270px;
-    width: 500px;
+    height: 72%;
+    width: 93%;
     box-shadow: 0px 5px 20px 10px #888888;
 }
 
@@ -368,28 +366,31 @@ a span {
 }
 
 .myEmail {
-    background: linear-gradient(rgb(230, 91, 5) 0%, rgb(168, 89, 37) 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    text-align: center;
+	color: cadetblue;
+	text-align: center;
     font-weight: bold;
-    text-transform: uppercase;
-    font-style: oblique;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     text-transform: none;
 }
-
-.myHometown {
-    background: linear-gradient(rgb(230, 91, 5) 0%, rgb(168, 89, 37) 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    text-align: center;
+.myPhone{
+	color: cadetblue;
+	text-align: center;
     font-weight: bold;
-    text-transform: uppercase;
-    font-style: oblique;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+    text-transform: none;
+}
+.myHometown {
+    /* background: linear-gradient(rgb(230, 91, 5) 0%, rgb(168, 89, 37) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
+    /* background-clip: text; */
+
+    /* text-transform: uppercase; */
+    /* font-style: oblique; */
+	color: cadetblue;
+	text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
     text-transform: none;
 }
 
@@ -430,8 +431,8 @@ a span {
     }
     .covidimage {
         margin-top: 80px;
-        width: 300px;
-        height: 200px;
+        height: 40%;
+    width: 93%;
     }
     .stm {
         padding-left: 0;
@@ -453,8 +454,8 @@ a span {
     }
     .covidimage {
         margin-top: 50px;
-        width: 400px;
-        height: 250px;
+		height: 40%;
+		width: 93%;
     }
 }
 
@@ -470,7 +471,7 @@ a span {
       }
       
     .active{
-        padding: none;
+        padding: 0;
         border-radius: none;
         box-shadow: none;
         transition: none;   
@@ -507,6 +508,7 @@ a span {
         font-family: Arial, Helvetica, sans-serif;
         color: royalblue;
         margin: 50px;
+		padding-bottom: 0;
         /* margin-bottom: 30px; */
 
         }
