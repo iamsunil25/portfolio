@@ -290,13 +290,13 @@ html {
     background-size: 400% 400%;
 }
 
-/* .hover:hover {
+.hover:hover {
     -ms-transform: scale(0.5);
     -webkit-transform: scale(0.5);
     transform: scale(1.1);
     transition: transform 0.3s;
 	
-} */
+}
 .hover {
 	text-align: center ;
 }
