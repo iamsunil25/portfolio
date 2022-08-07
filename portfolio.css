@@ -46,6 +46,11 @@ li {
 #introducImage {
     transition: box-shadow 0.1s, transform 0.1s;
 }
+.PLangText{
+	text-align: center;
+	font-size: 16px;
+	font-weight: 500;
+}
 
 #introducImage:hover {
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
@@ -104,18 +109,18 @@ html {
     border-top-right-radius: 25%;
 }
 
-.skillText {
+/* .skillText {
     color: whitesmoke;
     text-align: center;
     padding-top: 50px;
+} */
+.skillIcon{
+	width: 100px;
+	height: 100px;
 }
-
 .skillStyle {
-    width: 150px;
-    height: 150px;
-    background-color: rgb(100, 100, 184);
-    border-radius: 50%;
-    border: 5px dotted black;
+	display: grid;
+	margin: 15px;
 }
 
 .typewriter h2 {
@@ -144,16 +149,18 @@ html {
     width: 120px;
     border: 0;
     padding: 10px;
-    background: #1606f8;
+	color:rgb(231 214 214 / 88%);
+    background: cadetblue;
     font-weight: bold;
+	border-radius: 6px;
 }
 .btn-3:focus{
 	outline: none;
 }
 
-.btn-3:hover {
-    box-shadow: inset -10.5em 0 0 0 #ff96ad, inset 10.5em 0 0 0 #ff96ad;
-}
+/* .btn-3:hover {
+    box-shadow: inset -10.5em 0 0 0 , inset 10.5em 0 0 0;
+} */
 
 .btn-4 {
     cursor: pointer;
@@ -163,16 +170,18 @@ html {
     border: 0;
     padding: 10px;
     font-weight: bold;
-    background: #ff96ad;
+	color: rgb(231 214 214 / 88%);
+    background: cadetblue;
+	border-radius: 6px;
 }
 
 .btn-4:focus{
 	outline: none;
 }
 
-.btn-4:hover {
-    box-shadow: inset -10.5em 0 0 0 #1606f8, inset 10.5em 0 0 0 #1606f8;
-}
+/* .btn-4:hover {
+    box-shadow: inset -10.5em 0 0 0 , inset 10.5em 0 0 0 ;
+} */
 
 .vertical {
     width: 5px;
@@ -344,8 +353,10 @@ a span {
 }
 
 .navitemimage {
-    width: 2%;
+	width: 2%;
     height: 2%;
+	margin-right:4px;
+	margin-bottom: 3px;
 }
 
 .stm {
@@ -379,8 +390,7 @@ a span {
 }
 
 @media only screen and (max-width: 800px) and (min-width: 600px) {
- 
-    
+
     .content_box2 {
         margin-left: 150px;
     }
@@ -393,6 +403,14 @@ a span {
     .col-sm-1 {
         margin: auto;
     }
+	.skillIcon{
+		width: 70px;
+		height: 70px;
+	}
+	.skillStyle {
+		display: grid;
+		margin: 15px;
+	}
     .aboutimage {
         width: 200px;
         height: 200px;
@@ -437,6 +455,11 @@ a span {
 }
 
 @media only screen and (max-width: 600px) {
+	.PLangText{
+		text-align: center;
+		font-size: 12px;
+		font-weight: 400;
+	}
     .stop-scrolling {
         height: 100%;
         overflow: hidden;
@@ -476,12 +499,9 @@ a span {
 
 
     li a {
-        font-size: 1.3rem;
+        font-size: 21px;
         font-family: Arial, Helvetica, sans-serif;
         color: royalblue;
-        /* padding-bottom: 50px; */
-        padding-bottom: 0;
-        text-align: center;
         margin: 50px;
         /* margin-bottom: 30px; */
 
@@ -505,8 +525,10 @@ a span {
         padding: 0;
     }
     .navitemimage {
-        width: 10%;
-        height: 10%;
+    	width: 6%;
+    height: 6%;
+	margin-right: 4px;
+	margin-bottom: 3px;
     }
     ul li:hover a {
         border-bottom: none;
@@ -601,6 +623,15 @@ a span {
     .hover {
         margin-bottom: 10px;
     }
+	.skillIcon{
+		width: 50px;
+		height: 50px;
+	}
+	.skillStyle {
+		display: grid;
+		margin: 20px;
+	}
+
 }
 
 @media only screen and (max-width: 330px) {

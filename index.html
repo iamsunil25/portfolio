@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="this is sunil joshi's portfolio website " />
+    <meta name="description" content="Wunil Joshi portfolio website" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" type="text/css" href="portfolio.css" />
@@ -14,32 +14,33 @@
 </head>
 
 <body style="background: #d4d3d7">
+
     <!-- navbar -->
     <header>
         <nav class="shadow-lg pb-3 css-selector" id="navbar" style="display: none;">
             <i class="fa fa-times crossIcon" id="crossIcon"></i>
             <ul>
-                <li class="">
-                    <a href="#home" style="text-decoration: none"><img src="images/homeicon.png" alt="home icon" class="navitemimage" />Home</a>
+                <li class="home">
+                    <a href="#home" style="text-decoration: none"><img src="icons/navbar_icon/home.svg" alt="home icon" class="navitemimage" />Home</a>
                 </li>
                 <li class="myservice">
-                    <a href="#myservice" style="text-decoration: none"><img src="images/pngkit_services-icon-png_2087210.png" alt="service icon " class="navitemimage" />Services</a>
+                    <a href="#myservice" style="text-decoration: none"><img src="icons/navbar_icon/service.svg" alt="service icon " class="navitemimage" />Services</a>
                 </li>
                 <li class="projects">
-                    <a href="#projects" style="text-decoration: none"><img src="images/icons8-work-64.png" alt="project icon" class="navitemimage" />Projects</a>
+                    <a href="#projects" style="text-decoration: none"><img src="icons/navbar_icon/work.svg" alt="project icon" width="23px" height="23px" class="navitemimage" />Projects</a>
                 </li>
                 <li class="skills">
-                    <a href="#skills" style="text-decoration: none"><img src="images/skills.png" alt="skills icon" class="navitemimage" />Skills</a>
+                    <a href="#skills" style="text-decoration: none"><img src="icons/navbar_icon/skills.svg" alt="skills icon" class="navitemimage" width="13px" height="13px" />Skills</a>
                 </li>
                 <li class="resume">
-                    <a href="#resume" style="text-decoration: none"><img src="images/cv.png" alt="resume icon" class="navitemimage" />Resume</a>
+                    <a href="#resume" style="text-decoration: none"><img src="icons/navbar_icon/cv.svg" alt="resume icon" class="navitemimage" />Resume</a>
                 </li>
                 <li class="about">
                     <a href="#about" style="text-decoration: none">
-                        <img src="images/user.png" class="navitemimage" alt="about icon" />About</a>
+                        <img src="icons/navbar_icon/aboutus.png" class="navitemimage" alt="about icon" />About</a>
                 </li>
                 <li class="Contact">
-                    <a href="#Contact" style="text-decoration: none"><img alt="contact us icon" src="images/icons8-contact-us-48.png" class="navitemimage" />Contact</a>
+                    <a href="#Contact" style="text-decoration: none"><img alt="contact us icon" src="icons/navbar_icon/contact.svg" class="navitemimage" />Contact</a>
                 </li>
             </ul>
         </nav>
@@ -49,20 +50,24 @@
 
     <br />
     <main style="margin-top: 130px">
+
         <!-- sidebar hamburger icon for mobile screen -->
         <div class="text-right mr-1">
             <button class="btn" style="outline: none; padding: 1px 5px">
-          <i
-            class="fa fa-bars"
-            id="hamburgericon"
-            style="font-size: 30px; font-weight: bold"
-          ></i>
+				<img
+				
+				id="hamburgericon"
+				src="./images/hamburger.svg"
+			alt="hamburger icon"
+				  style="width: 33px;height: 33px; font-weight: bold"
+				/>
         </button>
         </div>
+
         <!-- Intro section -->
         <section class="row row1" id="home" data-aos="fade-down">
             <div>
-                <img id="introducImage" class="introimage" src="images/IMG_20200429_104624_977.jpg" alt="sunil's profile" width="200px" height="200px" style="border-radius: 50%" />
+                <img id="introducImage" class="introimage" src="images/profile.jpg" alt="sunil's profile" width="200px" height="200px" style="border-radius: 50%" />
             </div>
 
             <div class="typewriter mob1" style="float: left; margin-left: 30px; padding-top: 25px">
@@ -80,7 +85,8 @@
           >
         </div>
       </section>
-      <!--        my services section  -->
+
+      <!-- my services section  -->
       <section class="service" id="myservice" data-aos="fade-out">
         <div class="container-fluid">
           <h1 class="contact mb-5">
@@ -146,6 +152,7 @@
           </div>
         </div>
       </section>
+
       <!--       project section   -->
       <section id="projects" data-aos="flip-left">
         <div class="container-fluid">
@@ -161,7 +168,7 @@
           <div class="row stm mt-5" style="margin-bottom: 100px">
             <div class="pl-4 col-sm-5">
               <img
-                src="images/Screenshot (699).png"
+                src="images/covidProjectImage.png"
                 alt="coivd project image"
                 class="covidimage"
               />
@@ -188,6 +195,7 @@
           </div>
         </div>
       </section>
+
       <!--         skills section -->
       <section id="skills" data-aos="flip-right">
         <div class="container-fluid">
@@ -204,47 +212,69 @@
           class="container"
           style="display: flex; flex-wrap: wrap; justify-content: center"
         >
-          <div class="m-4 skillStyle">
-            <h3 class="skillText">HTML</h3>
+          <div class="skillStyle">
+			<img src="/icons/programminLangIcons/html.svg" class="skillIcon" alt="html icon" >
+            <span class="PLangText">HTML 5</span> 
           </div>
-          <div class="m-4 skillStyle">
-            <h3 class="skillText">CSS</h3>
-          </div>
-          <div class="m-4 skillStyle">
-            <h3 class="skillText">Sass</h3>
-          </div>
-          <div class="m-4 skillStyle">
-            <h3 class="skillText">Bootstrap</h3>
-          </div>
-          <div class="m-4 skillStyle">
-            <h3 class="skillText">Javascript</h3>
-          </div>
-          <div class="m-4 skillStyle">
-            <h3 class="skillText">Typescript</h3>
-          </div>
-          <div class="m-4 skillStyle">
-            <h3 class="skillText">Angular</h3>
-          </div>
-          <div class="m-4 skillStyle">
-            <h3 class="skillText">Java</h3>
-          </div>
-          <div class="m-4 skillStyle">
-            <h3 class="skillText">SQL</h3>
-          </div>
-          <div class="m-4 skillStyle">
-            <h3 class="skillText">git</h3>
-          </div>
-          <div class="m-4 skillStyle">
-            <h3 class="skillText">Mysql</h3>
-          </div>
-          <div class="m-4 skillStyle">
+          <div class="skillStyle">
+			  <img src="/icons/programminLangIcons/css3.svg" alt="css icon"  class="skillIcon">
+			  <span class="PLangText">CSS 3</span>
+			  
+			</div>
+			<div class="skillStyle">
+			  <img src="/icons/programminLangIcons/sass.svg" alt="saas icon" class="skillIcon">
+			  <span class="PLangText">SAAS</span> 
+			</div>
+	
+          <div class="skillStyle">
+			  <img src="/icons/programminLangIcons/bootstrap.svg" alt="bootstrap icon" class="skillIcon" >
+			  <span class="PLangText">Bootstrap 5</span> 
+			</div>
+          <div class="skillStyle">
+			<img src="/icons/programminLangIcons/js.svg" alt="javascript icon" class="skillIcon">
+			<span class="PLangText">Javascript</span>  
+		</div>
+          <div class="skillStyle">
+			<img src="/icons/programminLangIcons/typescript.svg" alt="typescript icon" class="skillIcon">
+			<span class="PLangText">Typescript</span> 
+		</div>
+          <div class="skillStyle">
+			<img src="/icons/programminLangIcons/react.svg" alt="react.js icon"  class="skillIcon">
+			<span class="PLangText">React.js 18</span>  
+		</div>
+          <div class="skillStyle">
+			<img src="/icons/programminLangIcons/angular.svg" alt="angular icon" class="skillIcon" >
+			<span class="PLangText">Angular 14</span>   
+		</div>
+		  <div class="skillStyle">
+			<img src="/icons/programminLangIcons/webDevelopment.svg" alt="web development icon" class="skillIcon">
+			<span class="PLangText">Web</span> 
+		</div>
+		<div class="skillStyle">
+			<img src="/icons/programminLangIcons/postman.svg" alt="postman icon" class="skillIcon" >
+			<span class="PLangText">Postman</span> 
+		</div>
+		<div class="skillStyle">
+			<img src="/icons/programminLangIcons/vscod.svg" alt="vs code icon" class="skillIcon" >
+			<span class="PLangText">VS Code</span> 
+		</div>
+          <div class="skillStyle">
+			<img src="/icons/programminLangIcons/git.svg" alt="git icon" class="skillIcon" >
+			<span class="PLangText">Git</span>   
+		</div>
+          <div class="skillStyle">
+			<img src="/icons/programminLangIcons/mongodb.svg" alt="mongodb icon" class="skillIcon" >
+          
+			<span class="PLangText">MongoDB</span> </div>
+          <!--<div class="m-4 skillStyle">
             <h3 class="skillText">OOP</h3>
           </div>
           <div class="m-4 skillStyle">
             <h3 class="skillText">DSA</h3>
-          </div>
+          </div> -->
         </div>
       </section>
+
       <!--       resume section   -->
       <section class="mb-5" id="resume" data-aos="zoom-in">
         <div class="container">
@@ -257,20 +287,22 @@
             ></i>
           </h1>
 
-          <div style="display: flex; justify-content: center">
-            <a
-              href="images/Sunil's Resume (1).png"
-              download="picture"
-            >
-              <img
-                src="images/Sunil's Resume (1).png"
-                alt="resume image"
-                width="100%"
-                height="auto"
-            /></a>
+          <div class="container">
+			 <a
+			href="images/sunil_resume.jpg"
+			download="picture"
+			style="display: flex; justify-content: center;align-items: center;"
+		  >
+		  <img
+		  src="images/sunil_resume.jpg"
+		  alt="resume image"
+		  width="70%"
+		  height="auto" />    
+		</a>
             </div>
             </div>
         </section>
+
         <!--     about section     -->
         <section class="mt-5 mb-5" class="row1" id="about" data-aos="fade-out">
             <div class="container">
@@ -281,12 +313,12 @@
             </div>
             <div class="row" id="about1">
                 <div class="col-sm-5" id="about2">
-                    <img src="images/IMG_20200429_104624_977 (2).jpg" alt="sunil's profile" class="aboutimage" style="border-radius: 50%" />
+                    <img src="images/profile.jpg" alt="sunil's profile" class="aboutimage" style="border-radius: 50%" />
                 </div>
 
                 <div class="col-sm-5" id="about3">
-                    <h1 class="aboutdes" style="color: palevioletred; font-family: fantasy">
-                        'S'n'u'e'l' dicen "sunil" 😎
+                    <h1 class="aboutdes" style="color: rgb(216, 133, 160); font-family: fantasy">
+                        Sunil Joshi
                     </h1>
 
                     <p class="aboutdes" style="font-size: 1.4rem; font-weight: 500">
@@ -296,6 +328,7 @@
                 </div>
             </div>
         </section>
+
         <!--     contact section     -->
         <section class="mt-5" id="Contact" data-aos="fade-out">
             <div class="container">
@@ -307,45 +340,45 @@
             <div class="row rowfooter mt-5" style="display: flex; justify-content: center; align-items: center">
                 <div class="col-sm-1 hover ml-3">
                     <a href="https://www.linkedin.com/in/iamsunil25/" target="_blank">
-                        <img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG29.png" alt="linkedin image" width="115px" height="115px" />
-                        <span>Linkedin</span>
+                        <img src="icons/contact_me/linkedin.svg" alt="linkedin image" width="100px" height="100px" />
+                     
+						<!-- <span>Linkedin</span> -->
                     </a>
                 </div>
                 <div class="col-sm-1 ml-3 hover">
                     <a href="https://www.instagram.com/iamsunil25" target="_blank">
-                        <img src="https://th.bing.com/th/id/OIP.mdNMeNAxQL1gWv0U3KAe1gHaHZ?pid=ImgDet&rs=1" alt="instagram image" width="100px" height="100px" class="instagramImage" />
-                        <span>Instagram</span>
+                        <img src="/icons/contact_me/instagram.svg" alt="instagram image" width="100px" height="100px" class="instagramImage" />
+                        <!-- <span>Instagram</span> -->
                     </a>
                 </div>
                 <div class="col-sm-1 ml-3 hover">
                     <a href="https://www.github.com/iamsunil25" target="_blank">
-                        <img src="https://pngimg.com/uploads/github/github_PNG80.png" alt="github image" width="100px" height="100px" />
-                        <span>Github</span>
+                        <img src="/icons/contact_me/github.svg" alt="github image" width="100px" height="100px" />
+                        <!-- <span>Github</span> -->
                     </a>
                 </div>
                 <div class="col-sm-1 ml-3 hover">
                     <a href="mailto:suniljoshi4984@gmail.com" target="_blank">
-                        <img src="https://th.bing.com/th/id/OIP.mQiRjfCSpRXE3PwFpTAqUwHaFj?pid=ImgDet&rs=1" alt="gmail image" width="100px" height="100px" />
-                        <span>Gmail</span>
+                        <img src="./icons/contact_me/gmail.svg" alt="gmail image" width="100px" height="100px" />
+                        <!-- <span>Gmail</span> -->
                     </a>
                 </div>
                 <div class="col-sm-1 ml-3 hover">
                     <a href="https://codepen.io/jsunil_25" target="_blank">
-                        <img src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png" alt="codepan image" width="100px" height="100px" class="codepanImage" />
-                        <span>Codepan</span>
+                        <img src="/icons/contact_me/codepen.svg" alt="codepan image" width="100px" height="100px" class="codepanImage" />
+                        <!-- <span>Codepan</span> -->
                     </a>
                 </div>
                 <div class="col-sm-1 ml-3 hover">
                     <a href="https://dev.to/iamsunil25" target="_blank" style="background: #d2d7d3">
-                        <img src="images/dev (2).jpg" width="100px" height="100px" alt="dev.to image" />
-                        <span>Dev</span>
+                        <img src="icons/contact_me/dev.png" width="100px" height="100px" style="border-radius: 50%" alt="dev.to image" />
+                        <!-- <span>Dev</span> -->
                     </a>
                 </div>
                 <div class="col-sm-1 ml-3 hover">
                     <a href="https://twitter.com/iamsunil25" target="_blank" style="background: #d2d7d3">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:
-        ANd9GcSmZ9ljoPKbFnG7kx8M-N3RdvXm9lrwxI0SzLhlvMSlVBOAoxLz04nZpx3loan-68vnkUA&usqp=CAU" alt="twitter image" width="100px" height="100px" style="border-radius: 50%" />
-                        <span>Twitter</span>
+                        <img src="/icons/contact_me/twitter.svg" alt="twitter image" width="100px" height="100px" style="border-radius: 50%" />
+                        <!-- <span>Twitter</span> -->
                     </a>
                 </div>
             </div>
@@ -362,15 +395,19 @@
                 <h2 class="myHometown" id="myHometown">Jodhpur (Rajasthan), India</h2>
             </div>
         </section>
+
         <!-- uparrow button -->
         <a id="upArrow" href="#home">
             <img src="images/top-arrow-white.png" class="top-arrow" alt="uparrow image" title="back to top" />
         </a>
     </main>
+
     <!-- portfilio.js included -->
     <script type="text/javascript" src="portfolio.js"></script>
+
     <!-- using for font -->
     <script src="https://kit.fontawesome.com/836a943e18.js" crossorigin="anonymous"></script>
+
     <!-- Animation js library included -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
