@@ -49,8 +49,9 @@ function handleMobileResponsiveness() {
     document.querySelector("main").style.marginTop = "0px";
     document.getElementById("navbar").style.display = "none";
     document.getElementById("myEmail").style.fontSize = "1.4rem";
+	
     document.getElementById("myHometown").style.fontSize = "1.4rem";
-    document.getElementById("contactheader").style.marginLeft = "-15px";
+    // document.getElementById("contactheader").style.marginLeft = "-15px";
     document.getElementById("crossIcon").style.display = "none";
 
   }
