@@ -576,15 +576,16 @@ a span {
         margin-top: 225px;
     }
     .contact {
-        background: linear-gradient(rgb(230, 91, 5) 0%, rgb(168, 89, 37) 100%);
+        /* background: linear-gradient(rgb(230, 91, 5) 0%, rgb(168, 89, 37) 100%);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
-        background-clip: text;
+        background-clip: text; */
         font-size: 1.4rem;
         text-align: center;
         font-weight: bold;
-        text-transform: uppercase;
-        font-style: oblique;
+		color: cadetblue;
+        /* text-transform: uppercase;
+        font-style: oblique; */
     }
     .aboutdes {
         padding-left: 0;
