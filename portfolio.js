@@ -40,65 +40,65 @@ function handleMobileResponsiveness() {
     document.getElementById("circle1").classList.remove("circle1");
     document.getElementById("circle2").classList.remove("circle1");
     document.getElementById("circle3").classList.remove("circle1");
-    document.getElementById("about1").classList.remove("mt-5", "mb-5");
-    document.getElementById("about2").classList.remove("mb-5");
-    document.getElementById("about3").classList.remove("mt-5");
-    document.getElementById("about3").classList.add("mt-4");
-    document.getElementById("about2").classList.add("mt-4");
+    // document.getElementById("about1").classList.remove("mt-5", "mb-5");
+    // document.getElementById("about2").classList.remove("mb-5");
+    // document.getElementById("about3").classList.remove("mt-5");
+    // document.getElementById("about3").classList.add("mt-4");
+    // document.getElementById("about2").classList.add("mt-4");
     document.getElementById("home").style.marginTop = "20%";
     document.querySelector("main").style.marginTop = "0px";
     document.getElementById("navbar").style.display = "none";
     document.getElementById("myEmail").style.fontSize = "1.4rem";
 	
     document.getElementById("myHometown").style.fontSize = "1.4rem";
-    // document.getElementById("contactheader").style.marginLeft = "-15px";
+    document.getElementById("contactheader").style.marginLeft = "-15px";
     document.getElementById("crossIcon").style.display = "none";
 
   }
 
   if (window.screen.width > 800) {
     hamburgericon.parentElement.style.display = "none";
-    document.getElementById("about1").classList.add("mt-5", "mb-5");
-    document.getElementById("about2").classList.add("mb-5");
-    document.getElementById("about3").classList.add("mt-5");
+    // document.getElementById("about1").classList.add("mt-5", "mb-5");
+    // document.getElementById("about2").classList.add("mb-5");
+    // document.getElementById("about3").classList.add("mt-5");
   }
 }
 handleMobileResponsiveness();
 
 //handling  hover effect on image
-introducImage.addEventListener("mousemove", handleMove);
+// introducImage.addEventListener("mousemove", handleMove);
 
-function handleMove(e) {
-  const xVal = e.layerX;
-  const yVal = e.layerY;
+// function handleMove(e) {
+//   const xVal = e.layerX;
+//   const yVal = e.layerY;
 
-  const yRotation = 20 * ((xVal - width / 2) / width);
-  const xRotation = -20 * ((yVal - height / 2) / height);
+//   const yRotation = 20 * ((xVal - width / 2) / width);
+//   const xRotation = -20 * ((yVal - height / 2) / height);
 
-  const string =
-    "perspective(500px) scale(1.1) rotateX(" +
-    xRotation +
-    "deg) rotateY(" +
-    yRotation +
-    "deg)";
+//   const string =
+//     "perspective(500px) scale(1.1) rotateX(" +
+//     xRotation +
+//     "deg) rotateY(" +
+//     yRotation +
+//     "deg)";
 
-  introducImage.style.transform = string;
-}
+//   introducImage.style.transform = string;
+// }
 
-introducImage.addEventListener("mouseout", function () {
-  introducImage.style.transform =
-    "perspective(500px) scale(1) rotateX(0) rotateY(0)";
-});
+// introducImage.addEventListener("mouseout", function () {
+//   introducImage.style.transform =
+//     "perspective(500px) scale(1) rotateX(0) rotateY(0)";
+// });
 
-introducImage.addEventListener("mousedown", function () {
-  introducImage.style.transform =
-    "perspective(500px) scale(0.9) rotateX(0) rotateY(0)";
-});
+// introducImage.addEventListener("mousedown", function () {
+//   introducImage.style.transform =
+//     "perspective(500px) scale(0.9) rotateX(0) rotateY(0)";
+// });
 
-introducImage.addEventListener("mouseup", function () {
-  introducImage.style.transform =
-    "perspective(500px) scale(1.1) rotateX(0) rotateY(0)";
-});
+// introducImage.addEventListener("mouseup", function () {
+//   introducImage.style.transform =
+//     "perspective(500px) scale(1.1) rotateX(0) rotateY(0)";
+// });
 
 //this is used for show navbar when scrolltop >200
 function navbarDisplay() {
