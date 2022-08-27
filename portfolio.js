@@ -1,6 +1,7 @@
 let navbar = document.getElementById("navbar");
 let hamburgericon = document.getElementById("hamburgericon");
 let introducImage = document.getElementById("introducImage");
+
 const height = introducImage.clientHeight;
 const width = introducImage.clientWidth;
 if (!window.screen.width < 700) {
@@ -128,10 +129,113 @@ window.onscroll = function () {
   upArrowDispaly();
 };
 
+let x = document.forms["contactForm"];
+let formSuccess = false;
+let errorMessage = "something went wrong please try again later."
+let formSuccessMessage = "Thank you, you will get reply soon."
+//contact us form
+x.addEventListener('submit', async (event) => {
+	console.log("form");
+	event.preventDefault()
+	event.stopPropagation();
+	if(!formSuccess){
+		document.getElementById("submitContactForm").textContent="...Submitting"
+let name = document.forms["contactForm"]["name"].value
+let email = document.forms["contactForm"]["email"].value
+let contactNo=  document.forms["contactForm"]["contactNumber"].value
+let message= document.forms["contactForm"]["message"].value
+formSuccess = true	
+await formSubmitData({name, email, contactNo, message})
+document.getElementById("submitContactForm").textContent="Submitted";
+x.reset()
+
+}
+// if(!name){
+// 	let nameError = document.getElementsByClassName("nameError")[0].style.display = "block"
+// 	document.getElementById("nameContactForm").style.border ="1px solid #dc3545";
+
+// } else{
+// 	let nameError = document.getElementsByClassName("nameError")[0].style.display = "none"
+// 	document.getElementById("nameContactForm").style.border ="none"
+// }
+
+
+// if(!email){
+// 	let nameError = document.getElementsByClassName("emailError")[0].style.display = "block"
+// 	document.getElementById("emailContactForm").style.border ="1px solid #dc3545";
+// } else{
+// 	let nameError = document.getElementsByClassName("emailError")[0].style.display = "none"
+// 	document.getElementById("emailContactForm").style.border ="none"
+// }
+
+
+
+
+
+});
+
+async function formSubmitData({name, email, contactNo, message}){
+	
+	// if(process && process.env && process?.env?.BASEURL){
+	// 	 baseUrl = process?.env?.BASEURL || "https://portfolio-e8010-default-rtdb.firebaseio.com"
+	// }else{
+
+
+	let	baseUrl = "https://portfolio-e8010-default-rtdb.firebaseio.com"
+	try {
+		const res = await axios.post(`${baseUrl}/portfolio.json`,{
+			"name":name,
+			"email":email,
+			"message":message,
+			"contactNo":contactNo
+		})
+		if(res.status==200){
+	toastMsg(false)
+		}
+	} catch (error) {
+		toastMsg(true)
+	}
+
+}
+
+// toast message form submitted
+function toastMsg(error){
+	console.log("got it");
+	Toastify({
+		text: error ? errorMessage:formSuccessMessage,
+		duration: 3000,
+		close: true,
+		ursor: `pointer`,
+		gravity: "top", // `top` or `bottom`
+		position: "right", // `left`, `center` or `right`
+		stopOnFocus: true, // Prevents dismissing of toast on hover
+		style: {
+			background: error ?  '#d51e1ec4': '#5dc332c9'
+		},
+		// duration: `2000`,
+		padding: `23px 23px`,
+		color: `#ffffff`,
+		display: `inline-block`,
+				// offset: {
+		// 	x: 320, // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+		// 	y: 320 // vertical axis - can be a number or a string indicating unity. eg: '2em'
+		//   },
+		// background: `-webkit-linear-gradient(315deg, #73a5ff, #5477f5)`,
+		// background:,
+		// position: `fixed`,
+		// top: `-150px`,
+		// right: `15px`,
+		// opacity: `0`,
+		// transition: `all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1)`,
+		// borderRadius: `2px`,
+		// c
+		}).showToast();
+}
+
 // for hiding navbar
 let crossIcon = document.getElementById("crossIcon");
 crossIcon.addEventListener("click", () => {
-  navbar.style.display = "none";
+  navbar.style.visibility = "hidden";
 });
 
 // toggling sidebar

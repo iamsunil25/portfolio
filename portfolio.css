@@ -4,7 +4,43 @@ li {
     margin: 14px;
 }
 
+.contactusFormCenter{
+	text-align:webkit-center
+}
 
+input::placeholder{
+	color: #2071eb !important;
+}
+textarea::placeholder{
+	color: #2071eb !important;
+}
+textarea {
+	background-color: #adadffc9 !important;
+	color: #2071eb !important;
+	padding-bottom: 35px !important;
+	}
+
+	
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: none !important;
+	border: 1px solid #000000 !important;
+}
+.btn.focus, .btn:focus {
+    box-shadow: none !important;
+	border: 2px solid #000000 !important;
+}
+
+input {
+background-color: #adadffc9 !important;
+color:#2071eb !important;
+}
+.form-control:focus {
+    color: #495057 !important;
+    background-color: #adadffc9 !important;
+    border-color: #000000 !important;
+    outline: 0;
+    box-shadow: 0 0 0 1px #000000 !important;
+}
 
 /* #upArrow i {
     transform: rotate(-45deg);
