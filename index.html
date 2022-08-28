@@ -99,7 +99,7 @@
                 <img id="introducImage" class="introimage" src="images/profile.jpg" alt="sunil's profile" />
             </div>
 
-            <div class="typewriter mob1" style="float: left; margin-left: 30px; padding-top: 25px">
+            <div class="typewriter mob1" style="margin-left: 30px; padding-top: 25px">
                 <h2 class="card-title" id="hello" style="font-style: italic">
                Hola
                 </h2>
@@ -112,7 +112,14 @@
           <a href="#about" style="text-decoration: none"
             ><button class="btn-4">About Me</button></a
           >
+		  <div  class="row" id="downArrow"  style="display:flex;justify-content: center;margin-top: 160px;">
+			  <a href="#myservice" style="text-decoration: none">
+			  <img width="100px" src="./images/down-arrow.png" height="100px" alt="down arrow">
+			  </a>
+			
+		  </div>
         </div>
+	
       </section>
 
       <!-- my services section  -->
@@ -423,31 +430,31 @@
 <form style="text-align:-webkit-center;" method="POST" name="contactForm" target="_blank">
 	<div class="form-group">
 	  <div class="col-sm-6">
-		<input type="text" class="form-control"  name="name" id="nameContactForm" placeholder="Enter your name" required>
+		<input type="text" class="form-control"  name="name" id="nameContactForm" placeholder="Your name" required>
 		<!-- <p class="nameError" style="color:#dc3545;text-align: left;display: none;">Name is required.</p> -->
 	  </div>
 	
 	</div>
 	<div class="form-group">
 	  <div class="col-sm-6">
-		<input type="email" class="form-control" name="email"  id="emailContactForm" placeholder="Enter your email" required >	
+		<input type="email" class="form-control" name="email"  id="emailContactForm" placeholder="Your email" required >	
 		<!-- <p class="emailError" style="color:#dc3545;text-align: left;display: none;">Email is required.</p> -->
 		<!-- <p class="emailInvalid" style="color:#dc3545;text-align: left;display: none;">Email is not valid.</p> -->
 	  </div>
 	</div>
 	<div class="form-group">
 		<div class="col-sm-6">
-		  <input type="tel" class="form-control" name="contactNumber" id="contactNumberContactForm"  placeholder="Enter your contact number" minlength="10" max="12">
+		  <input type="tel" class="form-control" name="contactNumber" id="contactNumberContactForm"  placeholder="Your contact number" minlength="10" max="12">
 		</div>
 	  </div>
 	  <div class="form-group">
 		<div class="col-sm-6">
-		  <textarea type="text" class="form-control" name="message" id="messageContactForm"  placeholder="message"></textarea>
+		  <textarea type="text" class="form-control" name="message" id="messageContactForm"  placeholder="Message"></textarea>
 		</div>
 	  </div>
 	<div class="form-group">
 	  <div class="col-sm-6">
-		<button type="submit" id="submitContactForm" class="col-sm-12 row btn btn-primary" style="background-color: #adadffc9;border: 1px solid #adadffc9;color: #565656;">Submit</button>
+		<button type="submit" id="submitContactForm" class="col-sm-12 row btn btn-primary" style="background-color: #adadffc9;border: 1px solid #adadffc9;color: #2071eb;font-weight: 500;">Submit</button>
 	  </div>
 	</div>
   </form>

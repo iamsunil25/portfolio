@@ -54,6 +54,7 @@ function handleMobileResponsiveness() {
     document.getElementById("myHometown").style.fontSize = "1.4rem";
     document.getElementById("contactheader").style.marginLeft = "-15px";
     document.getElementById("crossIcon").style.display = "none";
+	document.getElementById("downArrow").style.display = "none";
 
   }
 
