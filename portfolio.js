@@ -199,6 +199,7 @@ async function formSubmitData({name, email, contactNo, message}){
 
 }
 
+
 // toast message form submitted
 function toastMsg(error){
 	console.log("got it");
