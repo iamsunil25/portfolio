@@ -1,12 +1,19 @@
 let navbar = document.getElementById("navbar");
 let hamburgericon = document.getElementById("hamburgericon");
 let introducImage = document.getElementById("introducImage");
-
+let contactUsForm = document.forms["contactForm"];
+let formSuccess = false;
+let errorMessage = "something went wrong please try again later."
+let formSuccessMessage = "Thank you, you will get reply soon."
 const height = introducImage.clientHeight;
 const width = introducImage.clientWidth;
+const navlist2 = document.querySelectorAll("nav ul li a");
+
+// body overflow hidden below 700px screen width
 if (!window.screen.width < 700) {
   document.querySelector("body").style.overflowX = "hidden";
 }
+
 //getting all sections
 const sections = document.querySelectorAll("section");
 
@@ -23,6 +30,7 @@ function sectionActive() {
       current = section.getAttribute("id");
     }
   });
+
   navlist.forEach((li) => {
     li.classList.remove("active");
     if (li.classList.contains(current)) {
@@ -50,12 +58,10 @@ function handleMobileResponsiveness() {
     document.querySelector("main").style.marginTop = "0px";
     document.getElementById("navbar").style.display = "none";
     document.getElementById("myEmail").style.fontSize = "1.4rem";
-	
     document.getElementById("myHometown").style.fontSize = "1.4rem";
     document.getElementById("contactheader").style.marginLeft = "-15px";
     document.getElementById("crossIcon").style.display = "none";
 	document.getElementById("downArrow").style.display = "none";
-
   }
 
   if (window.screen.width > 800) {
@@ -65,6 +71,7 @@ function handleMobileResponsiveness() {
     // document.getElementById("about3").classList.add("mt-5");
   }
 }
+
 handleMobileResponsiveness();
 
 //handling  hover effect on image
@@ -130,25 +137,23 @@ window.onscroll = function () {
   upArrowDispaly();
 };
 
-let x = document.forms["contactForm"];
-let formSuccess = false;
-let errorMessage = "something went wrong please try again later."
-let formSuccessMessage = "Thank you, you will get reply soon."
+
+
 //contact us form
-x.addEventListener('submit', async (event) => {
-	console.log("form");
+contactUsForm.addEventListener('submit', async (event) => {
 	event.preventDefault()
 	event.stopPropagation();
 	if(!formSuccess){
-		document.getElementById("submitContactForm").textContent="...Submitting"
-let name = document.forms["contactForm"]["name"].value
-let email = document.forms["contactForm"]["email"].value
-let contactNo=  document.forms["contactForm"]["contactNumber"].value
-let message= document.forms["contactForm"]["message"].value
+		let submitState  = document.getElementById("submitContactForm")
+		submitState.textContent="...Submitting"
+let name = contactUsForm["name"].value
+let email = contactUsForm["email"].value
+let contactNo= ["contactNumber"].value
+let message= contactUsForm["message"].value
 formSuccess = true	
 await formSubmitData({name, email, contactNo, message})
-document.getElementById("submitContactForm").textContent="Submitted";
-x.reset()
+submitState.textContent="Submitted";
+contactUsForm.reset()
 
 }
 // if(!name){
@@ -168,28 +173,19 @@ x.reset()
 // 	let nameError = document.getElementsByClassName("emailError")[0].style.display = "none"
 // 	document.getElementById("emailContactForm").style.border ="none"
 // }
-
-
-
-
-
 });
 
+// qpi call for storing contact us form values in db
 async function formSubmitData({name, email, contactNo, message}){
-	
-	// if(process && process.env && process?.env?.BASEURL){
-	// 	 baseUrl = process?.env?.BASEURL || "https://portfolio-e8010-default-rtdb.firebaseio.com"
-	// }else{
-
-
 	let	baseUrl = "https://portfolio-e8010-default-rtdb.firebaseio.com"
 	try {
-		const res = await axios.post(`${baseUrl}/portfolio.json`,{
-			"name":name,
-			"email":email,
-			"message":message,
-			"contactNo":contactNo
-		})
+		let reqObj = {
+				"name":name,
+				"email":email,
+				"message":message,
+				"contactNo":contactNo
+		             }
+		const res = await axios.post(`${baseUrl}/portfolio.json`,{reqObj})
 		if(res.status==200){
 	toastMsg(false)
 		}
@@ -199,38 +195,22 @@ async function formSubmitData({name, email, contactNo, message}){
 
 }
 
-
 // toast message form submitted
 function toastMsg(error){
-	console.log("got it");
 	Toastify({
 		text: error ? errorMessage:formSuccessMessage,
 		duration: 3000,
 		close: true,
 		ursor: `pointer`,
-		gravity: "top", // `top` or `bottom`
-		position: "right", // `left`, `center` or `right`
-		stopOnFocus: true, // Prevents dismissing of toast on hover
+		gravity: "top", 
+		position: "right", 
+		stopOnFocus: true, 
 		style: {
 			background: error ?  '#d51e1ec4': '#5dc332c9'
 		},
-		// duration: `2000`,
 		padding: `23px 23px`,
 		color: `#ffffff`,
 		display: `inline-block`,
-				// offset: {
-		// 	x: 320, // horizontal axis - can be a number or a string indicating unity. eg: '2em'
-		// 	y: 320 // vertical axis - can be a number or a string indicating unity. eg: '2em'
-		//   },
-		// background: `-webkit-linear-gradient(315deg, #73a5ff, #5477f5)`,
-		// background:,
-		// position: `fixed`,
-		// top: `-150px`,
-		// right: `15px`,
-		// opacity: `0`,
-		// transition: `all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1)`,
-		// borderRadius: `2px`,
-		// c
 		}).showToast();
 }
 
@@ -255,8 +235,13 @@ hamburgericon.addEventListener("click", () => {
   }
 });
 
+// scroll to top on click uparrow icon
+document.getElementById("upArrow").addEventListener('click', ()=>{
+	console.log("abcd");
+window.scrollTo(0,0)
+})
+
 //for hiding sidebar
-const navlist2 = document.querySelectorAll("nav ul li a");
 navlist2.forEach((li) => {
   li.addEventListener("click", () => {
     navbar.style.display = "none";
@@ -266,3 +251,4 @@ navlist2.forEach((li) => {
     }
   });
 });
+

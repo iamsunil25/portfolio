@@ -122,6 +122,12 @@ nav {
     z-index: 1;
 }
 
+
+input:-webkit-autofill, input:focus:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 100px #adadffc9 inset;
+	-webkit-text-fill-color: #2071eb !important;
+ }
+
 .active {
     padding: 10px;
     border-radius: 7.5%;
