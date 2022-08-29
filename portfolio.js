@@ -237,7 +237,6 @@ hamburgericon.addEventListener("click", () => {
 
 // scroll to top on click uparrow icon
 document.getElementById("upArrow").addEventListener('click', ()=>{
-	console.log("abcd");
 window.scrollTo(0,0)
 })
 
