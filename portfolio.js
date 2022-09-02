@@ -49,11 +49,6 @@ function handleMobileResponsiveness() {
     document.getElementById("circle1").classList.remove("circle1");
     document.getElementById("circle2").classList.remove("circle1");
     document.getElementById("circle3").classList.remove("circle1");
-    // document.getElementById("about1").classList.remove("mt-5", "mb-5");
-    // document.getElementById("about2").classList.remove("mb-5");
-    // document.getElementById("about3").classList.remove("mt-5");
-    // document.getElementById("about3").classList.add("mt-4");
-    // document.getElementById("about2").classList.add("mt-4");
     document.getElementById("home").style.marginTop = "20%";
     document.querySelector("main").style.marginTop = "0px";
     document.getElementById("navbar").style.display = "none";
@@ -62,6 +57,13 @@ function handleMobileResponsiveness() {
     document.getElementById("contactheader").style.marginLeft = "-15px";
     document.getElementById("crossIcon").style.display = "none";
 	document.getElementById("downArrow").style.display = "none";
+	//hide sidebar
+	hideSidebar()
+	    // document.getElementById("about1").classList.remove("mt-5", "mb-5");
+    // document.getElementById("about2").classList.remove("mb-5");
+    // document.getElementById("about3").classList.remove("mt-5");
+    // document.getElementById("about3").classList.add("mt-4");
+    // document.getElementById("about2").classList.add("mt-4");
   }
 
   if (window.screen.width > 800) {
@@ -73,41 +75,6 @@ function handleMobileResponsiveness() {
 }
 
 handleMobileResponsiveness();
-
-//handling  hover effect on image
-// introducImage.addEventListener("mousemove", handleMove);
-
-// function handleMove(e) {
-//   const xVal = e.layerX;
-//   const yVal = e.layerY;
-
-//   const yRotation = 20 * ((xVal - width / 2) / width);
-//   const xRotation = -20 * ((yVal - height / 2) / height);
-
-//   const string =
-//     "perspective(500px) scale(1.1) rotateX(" +
-//     xRotation +
-//     "deg) rotateY(" +
-//     yRotation +
-//     "deg)";
-
-//   introducImage.style.transform = string;
-// }
-
-// introducImage.addEventListener("mouseout", function () {
-//   introducImage.style.transform =
-//     "perspective(500px) scale(1) rotateX(0) rotateY(0)";
-// });
-
-// introducImage.addEventListener("mousedown", function () {
-//   introducImage.style.transform =
-//     "perspective(500px) scale(0.9) rotateX(0) rotateY(0)";
-// });
-
-// introducImage.addEventListener("mouseup", function () {
-//   introducImage.style.transform =
-//     "perspective(500px) scale(1.1) rotateX(0) rotateY(0)";
-// });
 
 //this is used for show navbar when scrolltop >200
 function navbarDisplay() {
@@ -154,18 +121,15 @@ formSuccess = true
 await formSubmitData({name, email, contactNo, message})
 submitState.textContent="Submitted";
 contactUsForm.reset()
-
 }
+
 // if(!name){
 // 	let nameError = document.getElementsByClassName("nameError")[0].style.display = "block"
 // 	document.getElementById("nameContactForm").style.border ="1px solid #dc3545";
-
 // } else{
 // 	let nameError = document.getElementsByClassName("nameError")[0].style.display = "none"
 // 	document.getElementById("nameContactForm").style.border ="none"
 // }
-
-
 // if(!email){
 // 	let nameError = document.getElementsByClassName("emailError")[0].style.display = "block"
 // 	document.getElementById("emailContactForm").style.border ="1px solid #dc3545";
@@ -241,13 +205,50 @@ window.scrollTo(0,0)
 })
 
 //for hiding sidebar
+function hideSidebar(){
 navlist2.forEach((li) => {
-  li.addEventListener("click", () => {
-    navbar.style.display = "none";
-    let body = document.querySelector("body");
-    if (body && body.classList) {
-      body.classList.remove("stop-scrolling");
-    }
-  });
-});
+		li.addEventListener("click", () => {
+		  navbar.style.display = "none";
+		  let body = document.querySelector("body");
+		  if (body && body.classList) {
+			body.classList.remove("stop-scrolling");
+		  }
+		});
+	  });
+}
 
+
+//handling  hover effect on image
+// introducImage.addEventListener("mousemove", handleMove);
+
+// function handleMove(e) {
+//   const xVal = e.layerX;
+//   const yVal = e.layerY;
+
+//   const yRotation = 20 * ((xVal - width / 2) / width);
+//   const xRotation = -20 * ((yVal - height / 2) / height);
+
+//   const string =
+//     "perspective(500px) scale(1.1) rotateX(" +
+//     xRotation +
+//     "deg) rotateY(" +
+//     yRotation +
+//     "deg)";
+
+//   introducImage.style.transform = string;
+// }
+
+// introducImage.addEventListener("mouseout", function () {
+//   introducImage.style.transform =
+//     "perspective(500px) scale(1) rotateX(0) rotateY(0)";
+// });
+
+// introducImage.addEventListener("mousedown", function () {
+//   introducImage.style.transform =
+//     "perspective(500px) scale(0.9) rotateX(0) rotateY(0)";
+// });
+
+// introducImage.addEventListener("mouseup", function () {
+//   introducImage.style.transform =
+//     "perspective(500px) scale(1.1) rotateX(0) rotateY(0)";
+// });

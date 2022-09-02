@@ -1,3 +1,18 @@
+/* * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	color: #4e4c4c;
+	user-select: none;
+	font-family: "Open Sans";
+	font-weight: 500;
+  }
+  
+p {
+	font-size: 1.4rem;
+	font-weight: 500;
+	color: #4e4c4c;;
+} */
 li {
     display: inline;
     list-style: none;
@@ -323,6 +338,7 @@ a{
 .head {
 	color: cadetblue;
     font-size: 2rem;
+	/* font-weight: 600; */
 }
 
 .css-selector {
@@ -706,3 +722,7 @@ a span {
         box-shadow: 0px 5px 20px 10px #888888;
     }
 }
+/* @font-face {
+	font-family: "Open Sans";
+	src: url('./font/static/OpenSans/OpenSans-SemiBold.ttf');
+  } */
