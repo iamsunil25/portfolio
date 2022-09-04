@@ -20,7 +20,8 @@ li {
 }
 
 .contactusFormCenter{
-	text-align:webkit-center
+	text-align:webkit-center;
+	text-align:-moz-center
 }
 
 input::placeholder{
