@@ -143,13 +143,13 @@ contactUsForm.reset()
 async function formSubmitData({name, email, contactNo, message}){
 	let	baseUrl = "https://portfolio-e8010-default-rtdb.firebaseio.com"
 	try {
-		let reqObj = {
+		let userDataObj = {
 				"name":name,
 				"email":email,
 				"message":message,
 				"contactNo":contactNo
 		             }
-		const res = await axios.post(`${baseUrl}/portfolio.json`,{reqObj})
+		const res = await axios.post(`${baseUrl}/portfolio.json`,userDataObj)
 		if(res.status==200){
 	toastMsg(false)
 		}
