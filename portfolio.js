@@ -3,8 +3,8 @@ let hamburgericon = document.getElementById("hamburgericon");
 let introducImage = document.getElementById("introducImage");
 let contactUsForm = document.forms["contactForm"];
 let formSuccess = false;
-let errorMessage = "something went wrong please try again later."
-let formSuccessMessage = "Thank you, you will get reply soon."
+let errorMessage = "Something went wrong please try again later"
+let formSuccessMessage = "Gracias, Sunil will be reached out to you via email"
 const height = introducImage.clientHeight;
 const width = introducImage.clientWidth;
 const navlist2 = document.querySelectorAll("nav ul li a");
@@ -115,45 +115,35 @@ contactUsForm.addEventListener('submit', async (event) => {
 		submitState.textContent="...Submitting"
 let name = contactUsForm["name"].value
 let email = contactUsForm["email"].value
-let contactNo= ["contactNumber"].value
+let contactNo= contactUsForm["contactNumber"].value
 let message= contactUsForm["message"].value
 formSuccess = true	
 await formSubmitData({name, email, contactNo, message})
 submitState.textContent="Submitted";
 contactUsForm.reset()
 }
-
-// if(!name){
-// 	let nameError = document.getElementsByClassName("nameError")[0].style.display = "block"
-// 	document.getElementById("nameContactForm").style.border ="1px solid #dc3545";
-// } else{
-// 	let nameError = document.getElementsByClassName("nameError")[0].style.display = "none"
-// 	document.getElementById("nameContactForm").style.border ="none"
-// }
-// if(!email){
-// 	let nameError = document.getElementsByClassName("emailError")[0].style.display = "block"
-// 	document.getElementById("emailContactForm").style.border ="1px solid #dc3545";
-// } else{
-// 	let nameError = document.getElementsByClassName("emailError")[0].style.display = "none"
-// 	document.getElementById("emailContactForm").style.border ="none"
-// }
 });
+
+
 
 // qpi call for storing contact us form values in db
 async function formSubmitData({name, email, contactNo, message}){
-	let	baseUrl = "https://portfolio-e8010-default-rtdb.firebaseio.com"
+	// "https://portfolio-e8010-default-rtdb.firebaseio.com"
+	let	baseUrl = 'https://sunil-portfolio-api.herokuapp.com/portfolio/contact-us'
 	try {
-		let userDataObj = {
+		let contactUsData = {
 				"name":name,
 				"email":email,
-				"message":message,
-				"contactNo":contactNo
-		             }
-		const res = await axios.post(`${baseUrl}/portfolio.json`,userDataObj)
-		if(res.status==200){
+				"message":message ,
+				"contact_number":contactNo
+			}
+		const res = await axios.post(baseUrl,{"contactUsData":contactUsData})
+		console.log("res data contact us api", res.data);
+		if(res.status==201){
 	toastMsg(false)
 		}
 	} catch (error) {
+		console.log("error while api calling",error);
 		toastMsg(true)
 	}
 
@@ -216,6 +206,8 @@ navlist2.forEach((li) => {
 		});
 	  });
 }
+
+
 
 
 //handling  hover effect on image
