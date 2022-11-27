@@ -536,6 +536,9 @@ a span {
 		opacity: .7;
 		margin:0;
 		}
+		form{
+			width: 80%;
+		}
 	.PLangText{
 		text-align: center;
 		font-size: 12px;
