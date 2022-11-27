@@ -25,7 +25,7 @@ function sectionActive() {
   let current = "";
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
-    const sectionHeight = section.clientHeight;
+    const sectionHeight = section.clientHeight;	
     if (pageYOffset >= sectionTop - sectionHeight / 3) {
       current = section.getAttribute("id");
     }
@@ -113,6 +113,7 @@ contactUsForm.addEventListener('submit', async (event) => {
 	if(!formSuccess){
 		let submitState  = document.getElementById("submitContactForm")
 		submitState.textContent="...Submitting"
+		submitState.disabled = true;
 let name = contactUsForm["name"].value
 let email = contactUsForm["email"].value
 let contactNo= contactUsForm["contactNumber"].value
