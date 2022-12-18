@@ -130,7 +130,7 @@ contactUsForm.reset()
 // qpi call for storing contact us form values in db
 async function formSubmitData({name, email, contactNo, message}){
 	// "https://portfolio-e8010-default-rtdb.firebaseio.com"
-	let	baseUrl = 'https://sunil-portfolio-api.herokuapp.com/portfolio/contact-us'
+	let	baseUrl = 'https://my-first-nodejs-project-6a7blcx98-iamsunil25.vercel.app/portfolio/contact-us'
 	try {
 		let contactUsData = {
 				"name":name,
@@ -210,38 +210,3 @@ navlist2.forEach((li) => {
 
 
 
-
-//handling  hover effect on image
-// introducImage.addEventListener("mousemove", handleMove);
-
-// function handleMove(e) {
-//   const xVal = e.layerX;
-//   const yVal = e.layerY;
-
-//   const yRotation = 20 * ((xVal - width / 2) / width);
-//   const xRotation = -20 * ((yVal - height / 2) / height);
-
-//   const string =
-//     "perspective(500px) scale(1.1) rotateX(" +
-//     xRotation +
-//     "deg) rotateY(" +
-//     yRotation +
-//     "deg)";
-
-//   introducImage.style.transform = string;
-// }
-
-// introducImage.addEventListener("mouseout", function () {
-//   introducImage.style.transform =
-//     "perspective(500px) scale(1) rotateX(0) rotateY(0)";
-// });
-
-// introducImage.addEventListener("mousedown", function () {
-//   introducImage.style.transform =
-//     "perspective(500px) scale(0.9) rotateX(0) rotateY(0)";
-// });
-
-// introducImage.addEventListener("mouseup", function () {
-//   introducImage.style.transform =
-//     "perspective(500px) scale(1.1) rotateX(0) rotateY(0)";
-// });
