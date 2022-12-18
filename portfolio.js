@@ -118,10 +118,10 @@ let name = contactUsForm["name"].value
 let email = contactUsForm["email"].value
 let contactNo= contactUsForm["contactNumber"].value
 let message= contactUsForm["message"].value
-formSuccess = true	
+formSuccess = true;	
 await formSubmitData({name, email, contactNo, message})
 submitState.textContent="Submitted";
-contactUsForm.reset()
+contactUsForm.reset();
 }
 });
 

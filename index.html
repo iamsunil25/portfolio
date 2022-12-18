@@ -456,21 +456,21 @@
 <form method="POST" name="contactForm" target="_blank">
 	<div class="form-group">
 	  <!-- <div class="col-sm-6"> -->
-		<input type="text" class="form-control"  name="name" id="nameContactForm" placeholder="Your name" required>
+		<input type="text" class="form-control"  name="name" id="nameContactForm" placeholder="Name*" required>
 		<!-- <p class="nameError" style="color:#dc3545;text-align: left;display: none;">Name is required.</p> -->
 	  <!-- </div> -->
 	
 	</div>
 	<div class="form-group">
 	  <!-- <div class="row"> -->
-		<input type="email" class="form-control"  name="email"  id="emailContactForm" placeholder="Your email" required >	
+		<input type="email" class="form-control"  name="email"  id="emailContactForm" placeholder="Email*" required >	
 		<!-- <p class="emailError" style="color:#dc3545;text-align: left;display: none;">Email is required.</p> -->
 		<!-- <p class="emailInvalid" style="color:#dc3545;text-align: left;display: none;">Email is not valid.</p> -->
 	  <!-- </div> -->
 	</div>
 	<div class="form-group">
 		<!-- <div class="col-sm-6"> -->
-		  <input type="tel" class="form-control"  name="contactNumber" id="contactNumberContactForm"  placeholder="Your contact number" minlength="10" max="12">
+		  <input type="tel" class="form-control"  name="contactNumber" id="contactNumberContactForm"  placeholder="Mobile*"  pattern="[0-9]{10}" maxlength="10" title="Please enter valid mobile number" required >
 		<!-- </div> -->
 	  </div>
 	  <div class="form-group">
@@ -491,11 +491,11 @@
 <!-- contact footer -->
             <div class="py-2" style="display: block;background-color:#565656 ;" >
 				<div class="mt-1 footerText" id="myPhone">
-					<img src="./images/icons/contact_me/phone.svg"  alt="phone icon" class="footerImageRes">  +919057553147
+					<img src="./images/icons/contact_me/phone.svg"  alt="phone icon" class="footerImageRes"> <a style="text-decoration: none;" href="tel:+919057553147"> 9057553147</a> 
                 
                 </div>
                 <div class="footerText" id="myEmail">
-					<img src="./images/icons/contact_me/gmail.svg"  alt="gmail icon" class="footerImageRes">  suniljoshi4984@gmail.com
+					<img src="./images/icons/contact_me/gmail.svg"  alt="gmail icon" class="footerImageRes"> <a  style="text-decoration: none;" href="mailto:suniljoshi4984@gmail.com" >suniljoshi4984@gmail.com</a>
                 
 				</div>
                 <div class="footerText mb-1 " id="myHometown"><img  src="./images/icons/contact_me/location.svg" alt="address icon" class="footerImageRes">  Jodhpur (Rajasthan), India</div>
