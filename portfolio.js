@@ -59,18 +59,10 @@ function handleMobileResponsiveness() {
 	document.getElementById("downArrow").style.display = "none";
 	//hide sidebar
 	hideSidebar()
-	    // document.getElementById("about1").classList.remove("mt-5", "mb-5");
-    // document.getElementById("about2").classList.remove("mb-5");
-    // document.getElementById("about3").classList.remove("mt-5");
-    // document.getElementById("about3").classList.add("mt-4");
-    // document.getElementById("about2").classList.add("mt-4");
   }
 
   if (window.screen.width > 800) {
     hamburgericon.parentElement.style.display = "none";
-    // document.getElementById("about1").classList.add("mt-5", "mb-5");
-    // document.getElementById("about2").classList.add("mb-5");
-    // document.getElementById("about3").classList.add("mt-5");
   }
 }
 
@@ -193,6 +185,9 @@ hamburgericon.addEventListener("click", () => {
 // scroll to top on click uparrow icon
 document.getElementById("upArrow").addEventListener('click', ()=>{
 window.scrollTo(0,0)
+})
+document.getElementById('topZeroClick').addEventListener('click',()=>{
+	window.scrollTo(0,0)	
 })
 
 //for hiding sidebar

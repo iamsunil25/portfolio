@@ -52,7 +52,7 @@
             <img src="./images/close.svg" alt="close icon" class="crossIcon" id="crossIcon">
             <ul>
                 <li class="home">
-                    <a href="#home" style="text-decoration: none"><img src="./images/icons/navbar_icon/home.svg" alt="home icon" class="navitemimage" />Home</a>
+                    <a href="#home" id="topZeroClick"  style="text-decoration: none"><img src="./images/icons/navbar_icon/home.svg" alt="home icon" class="navitemimage" />Home</a>
                 </li>
                 <li class="myservice">
                     <a href="#myservice" style="text-decoration: none"><img src="./images/icons/navbar_icon/service.svg" alt="service icon " class="navitemimage" />Services</a>
@@ -96,45 +96,49 @@
         </div>
 
         <!-- Intro section -->
-        <section class="row row1" id="home" data-aos="fade-down">
-            <div>
-                <img id="introducImage" class="introimage" src="images/profile.jpg" alt="sunil's profile" />
+        <section  id="home" data-aos="fade-down">	
+            <div class="row introSection" >
+				<div class="col-md-2 d-content" >
+					<img id="introducImage" class="introimage" src="images/profile.jpg" alt="sunil's profile" />
+				</div>
+				<div class="col-md-4">
+					<div class="typewriter mob1" style="margin-left: 30px;">
+						<h2 class="card-title" id="hello" style="font-style: italic">
+					   Hola 👋
+						</h2>
+						<h2 style="font-style: italic">This is Sunil Joshi</h2>
+						<h3 style="margin-left: 3px; color: cadetblue">
+							I am Frontend Web Developer
+						</h3>
+						<a href="#resume" style="text-decoration: none"><button class="btn-3">CV/Resume</button></a
+				  >
+				  <a href="#about" style="text-decoration: none"
+					><button class="btn-4">About Me</button></a
+				  >
+			
+				</div>
+				</div>
+	
             </div>
 
-            <div class="typewriter mob1" style="margin-left: 30px; padding-top: 25px">
-                <h2 class="card-title" id="hello" style="font-style: italic">
-               Hola 👋
-                </h2>
-                <h2 style="font-style: italic">This is Sunil Joshi</h2>
-                <h3 style="margin-left: 3px; color: cadetblue">
-                    I am Frontend Web Developer
-                </h3>
-                <a href="#resume" style="text-decoration: none"><button class="btn-3">CV/Resume</button></a
-          >
-          <a href="#about" style="text-decoration: none"
-            ><button class="btn-4">About Me</button></a
-          >
-		  <div id="downArrow"  style="display:flex;justify-content: center;margin-top: 150px;">
-			<a href="#myservice" style="text-decoration: none; margin-left: -60px;">
-			<img width="100px" src="./images/down-arrow.png" height="100px" alt="down arrow">
-			</a>
-		  
-		</div>
-        </div>
+        
 	
       </section>
 
+
+			<!-- down arrow -->
+			<div class="mb-3" id="downArrow"  style="display:flex;justify-content: center;height: 300px;padding-top:180px;">
+				<a href="#myservice" style="text-decoration: none;">
+				<img width="100px" src="./images/down-arrow.png" height="100px" alt="down arrow">
+				</a>
+			  
+			</div>
 
       <!-- my services section  -->
       <section class="service" id="myservice" data-aos="fade-out">
         <div class="container-fluid">
           <h1 class="contact mb-5">
             &lt;My Services&gt; <br />
-            <!-- <i
-              style="font-size: 50px"
-              class="mt-1 fas fa-chevron-down"
-              arial-hidden="true"
-            ></i> -->
           </h1>
 
           <div class="vertical" id="vertical">
@@ -198,74 +202,52 @@
           <h1 class="contact" style="line-height:20px;">
             &lt;Projects&gt; <br />
           </h1>
-		  <div style="flex-wrap: wrap;" class="row d-flex mt-5 mb-3 justify-content-center align-items-center">
 
-			<div class="col-md-3 mb-2 hover">
+		  <div style="flex-wrap: wrap;" class="d-flex mt-5 mb-5 justify-content-center">
+			<div class="col-md-3 mobileMarginBottom">
 				<a style="cursor: pointer"  href="https://redux-weather-app-ochre.vercel.app" target="_blank">
 				<img class="cardsForProjects" src="./images/weather_app_redux.png" alt="redux weather app" />
 			</a>
 				<div style="display:block;text-align: center;color: cadetblue;">
-					<h5>React-Redux Weather App</h5>
-					<div>Redux, Reactstrap, Class Component</div>
+					<figcaption> React-Redux Weather App <br/>
+						<b>Redux, Reactstrap, Class Component</b>
+					</figcaption>
+					<div></div>
 				</div>
 				</div>
-				<div class="col-md-3 mb-2 hover">
+				<div class="col-md-3 mobileMarginBottom">
 					<a style="cursor: pointer"  href="https://react-entertainment-webapp.vercel.app" target="_blank">
 					<img class="cardsForProjects" src="./images/react-entertainment-app.png" alt="redux weather app" />
 				</a>
 					<div style="display:block;text-align: center;color: cadetblue;">
-						<h5>React-Entertainment App</h5>
-						<div>Typescript, React-Query </div>
+						<figcaption>React-Entertainment App<br/>
+							<b>Typescript, React-Query, Talwind</b>
+						</figcaption>
 					</div>
 				
 			   </div>
-			   <div class="col-md-3 mb-2 hover" >
+			   <div class="col-md-3 mobileMarginBottom">
 				<a style="cursor: pointer"  href="https://tic-tac-toe-iamsunil25.vercel.app/" target="_blank">
 				<img class="cardsForProjects" src="./images/tic-tac-toe.png" alt="tic-tac-toe game" />
 			</a>
-				<div style="display:block;text-align: center;color: cadetblue;">
-					<h5>Tic-Tac-Toe</h5>
-					<div>Html 5, Vanilla JS, Talwinds CSS</div>
+				<div  style="display:block;text-align: center;color: cadetblue;">
+					<figcaption>Tic-Tac-Toe<br/>
+						<b>Html 5, Vanilla JS, Talwinds CSS</b>
+					</figcaption>
 				</div>
 			   </div>
-
-			<div class="col-md-3 mb-2 hover">			
+			<div class="col-md-3 mobileMarginBottom">			
 				<a style="cursor: pointer" href="https://iamsunil25.github.io/covid19-Angular-web" target="_blank">
 			<img class="cardsForProjects" src="./images/covidProjectImage.png"  alt="covid project image" />
 			</a>
 			<div style="display:block;text-align: center;color: cadetblue;">
-<h5>Covid19 Angular Web App</h5>
-<div>Angular 9, Angular Material</div>
+				<figcaption>Covid19 Angular Web App<br/>
+					<b>Angular 9, Angular Material</b>
+				</figcaption>
 			</div>	
 			</div>
 		  </div>
-<!-- 
-          <div class="row stm mt-5" style="margin-bottom: 100px">
-            <div class="pl-4 col-sm-5">
-      
-            </div>
-            <div class="col-sm-6 pl-4">
-              <h2 class="head mt-3 pl-2">Covid19 Angular Web Application</h2>
-              <p style="font-size: 1.4rem; font-weight: 500;color: #565656;">
-                In this web app user can get covid19 data of any country, state
-                or district with updated time and helpline number.Covid19 data
-                is in visualize form for better understanding.There is also
-                symptomps,precautions and treatments for covid19 disease.This
-                app is responsiveness so user can use it in mobile, tablet and
-                pc. This app is build using angular 9 framework.
-                <br />
-                <a
-                  href="https://iamsunil25.github.io/covid19-Angular-web/"
-				  rel="nofollow"
-                  target="_blank"
-                  style="text-decoration: none; word-wrap: break-word;color: royalblue !important;"
-                >
-                  Preview</a
-                >
-              </p>
-            </div>
-          </div> -->
-        <!-- </div> -->
+
       </section>
 
       <!--         skills section -->
@@ -273,11 +255,6 @@
         <div class="container-fluid">
           <h1 class="contact" style="margin-bottom: 50px">
             &lt;Skills&gt; <br />
-            <!-- <i
-              style="font-size: 50px"
-              class="mt-1 fas fa-chevron-down"
-              arial-hidden="true"
-            ></i> -->
           </h1>
         </div>
         <div
@@ -416,93 +393,62 @@
             <div class="container">
                 <h1 class="contact" id="contactheader">
                     &lt;Contact Me&gt; <br />
-                    <!-- <i style="font-size: 50px" class="mt-1 fas fa-chevron-down" arial-hidden="true"></i> -->
                 </h1>
             </div>
             <div class="row rowfooter mt-5 " style="display: flex; justify-content: center; align-items: center">
                 <div class="col-sm-1 hover">
                     <a href="https://www.linkedin.com/in/iamsunil25/"   rel="nofollow" target="_blank">
                         <img src="./images/icons/contact_me/linkedin.svg" alt="linkedin image" class="skillIcon"/>
-                     
                     </a>
-					<!-- <span class="PLangText">linkedin</span>  -->
                 </div>
                 <div class="col-sm-1 hover">
                     <a href="https://www.instagram.com/iamsunil25"   rel="nofollow" target="_blank">
                         <img src="./images/icons/contact_me/instagram.svg" alt="instagram image" class="skillIcon" class="instagramImage" />
                     </a>
-					<!-- <span class="PLangText">Instagram</span>  -->
                 </div>
                 <div class="col-sm-1  hover">
                     <a href="https://www.github.com/iamsunil25" target="_blank">
                         <img src="./images/icons/contact_me/github.svg" alt="github image" class="skillIcon" />
                     </a>
-					<!-- <span class="PLangText">Github</span>  -->
                 </div>
                 <div class="col-sm-1 hover"> 
                     <a href="mailto:suniljoshi4984@gmail.com"   rel="nofollow" target="_blank">
                         <img src="./images/icons/contact_me/gmail.svg" alt="gmail image" class="skillIcon"/>
                     </a>
-					<!-- <span class="PLangText">Gmail</span>  -->
                 </div>
-                <!-- <div class="col-sm-1  hover">
-                    <a href="https://codepen.io/jsunil_25"   rel="nofollow" target="_blank">
-                        <img src="./images/icons/contact_me/codepen.svg" alt="codepan image"class="skillIcon"class="codepanImage" />
-                    </a>
-					
-                </div> -->
 				<div class="col-sm-1 hover">
                     <a href="https://leetcode.com/iamsunil25" target="_blank"   rel="nofollow" style="background: #d2d7d3">
                         <img src="./images/icons/tech_icons/leetcode.svg" alt="leetcode image" class="skillIcon" style="border-radius: 50%;background-color: darkkhaki;" />
 						
                     </a>
-					<!-- <span class="PLangText">Twitter</span>  -->
                 </div>
-                <!-- <div class="col-sm-1 hover">
-                    <a href="https://dev.to/iamsunil25"   rel="nofollow" target="_blank" style="background: #d2d7d3">
-                        <img src="./images/icons/contact_me/dev.png" class="skillIcon" style="border-radius: 50%" alt="dev.to image" />
-                    </a>
-					<!-- <span class="PLangText">Dev</span>  -->
-                 <!-- </div> --> 
                 <div class="col-sm-1 hover">
                     <a href="https://twitter.com/iamsunil25" target="_blank"   rel="nofollow" style="background: #d2d7d3">
                         <img src="./images/icons/contact_me/twitter.svg" alt="twitter image" class="skillIcon" style="border-radius: 50%" />
 						
                     </a>
-					<!-- <span class="PLangText">Twitter</span>  -->
                 </div>
             </div>
 <!-- form for contact us -->
 <div class="container my-4">
 <form method="POST" name="contactForm" target="_blank">
 	<div class="form-group">
-	  <!-- <div class="col-sm-6"> -->
 		<input type="text" class="form-control"  name="name" id="nameContactForm" placeholder="Name*" required>
-		<!-- <p class="nameError" style="color:#dc3545;text-align: left;display: none;">Name is required.</p> -->
-	  <!-- </div> -->
-	
 	</div>
+
 	<div class="form-group">
-	  <!-- <div class="row"> -->
 		<input type="email" class="form-control"  name="email"  id="emailContactForm" placeholder="Email*" required >	
-		<!-- <p class="emailError" style="color:#dc3545;text-align: left;display: none;">Email is required.</p> -->
-		<!-- <p class="emailInvalid" style="color:#dc3545;text-align: left;display: none;">Email is not valid.</p> -->
-	  <!-- </div> -->
 	</div>
+
 	<div class="form-group">
-		<!-- <div class="col-sm-6"> -->
 		  <input type="tel" class="form-control"  name="contactNumber" id="contactNumberContactForm"  placeholder="Mobile*"  pattern="[0-9]{10}" maxlength="10" title="Please enter valid mobile number" required >
-		<!-- </div> -->
 	  </div>
+
 	  <div class="form-group">
-		<!-- <div class="col-sm-6"> -->
-		  <textarea type="text" class="form-control"   name="message" id="messageContactForm"  placeholder="Message"></textarea>
-		<!-- </div> -->
+		  <textarea type="text" class="form-control"   name="message" id="messageContactForm"  placeholder="Message*" required></textarea>
 	  </div>
 	<div class="form-group">
-	  <!-- <div class="col-sm-6"> -->
 		<button type="submit" id="submitContactForm" class="col-sm-12 row btn btn-primary" style="background-color: #adadffc9;border: 1px solid #adadffc9;color: #2071eb;font-weight: 500;">Submit</button>
-	  <!-- </div> -->
 	</div>
   </form>
 </div>
@@ -516,10 +462,9 @@
                 
                 </div>
                 <div class="footerText" id="myEmail">
-					<img src="./images/icons/contact_me/gmail.svg"  alt="gmail icon" class="footerImageRes"> <a  style="text-decoration: none;" href="mailto:suniljoshi4984@gmail.com" >suniljoshi4984@gmail.com</a>
-                
+					<img src="./images/icons/contact_me/gmail.svg"  alt="gmail icon" class="footerImageRes"> <a  style="text-decoration: none;" href="mailto:suniljoshi4984@gmail.com" >suniljoshi4984@gmail.com</a>              
 				</div>
-                <div class="footerText mb-1 " id="myHometown"><img  src="./images/icons/contact_me/location.svg" alt="address icon" class="footerImageRes">  Jodhpur (Rajasthan), India</div>
+                <div class="footerText mb-1" id="myHometown"><img  src="./images/icons/contact_me/location.svg" alt="address icon" class="footerImageRes">  Jodhpur (Rajasthan), India</div>
             </div>
         </section>
 
