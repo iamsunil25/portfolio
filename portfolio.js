@@ -32,8 +32,9 @@ function sectionActive() {
   });
 
   navlist.forEach((li) => {
-    li.classList.remove("active");
-    if (li.classList.contains(current)) {
+	  
+	  li.classList.remove("active");
+	  if (li.classList.contains(current)) {
       li.classList.add("active");
     }
   });
@@ -61,7 +62,7 @@ function handleMobileResponsiveness() {
 	hideSidebar()
   }
 
-  if (window.screen.width > 800) {
+  if (window.screen.width > 700) {
     hamburgericon.parentElement.style.display = "none";
   }
 }

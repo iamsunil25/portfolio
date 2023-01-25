@@ -363,8 +363,9 @@ a{
 	
 }
 .hover {
-	text-align: center ;
+    margin: 1px 10px;
 }
+
 a:hover span {
     visibility: visible;
     bottom: 100px;
@@ -397,7 +398,6 @@ a span {
 	height:160px;
 	border-radius: 50%;
     box-shadow: 0px 5px 20px 10px #888888;
-	/* margin-top: 38px; */
 }
 
 .row1 {
@@ -420,10 +420,6 @@ a span {
     height: 72%;
     width: 93%;
     box-shadow: 0px 5px 20px 10px #888888;
-}
-
-.aboutdes {
-    margin-left: 10px;
 }
 
 .navitemimage {
@@ -458,12 +454,23 @@ a span {
 	display: flex;
 	justify-content: center;
 }
+.mobileMargin{
+	margin: 1rem;
+}
 
-@media only screen and (max-width: 800px) and (min-width: 600px) {
-
+.widthIntro{
+	width: 50%;
+}
+@media only screen and (max-width: 1300px) and (min-width: 700px) {
     .content_box2 {
         margin-left: 150px;
     }
+	li{
+		margin: 2px;
+	}
+	.widthIntro{
+		width: 75%;
+	}
     .content_box3 {
         margin-left: -300px;
     }
@@ -488,9 +495,7 @@ a span {
         margin-top: 130px;
         box-shadow: 0px 5px 20px 10px #888888;
     }
-    .aboutdes {
-        margin-left: 50px;
-    }
+
     .aboutt {
         text-align: justify;
     }
@@ -504,16 +509,15 @@ a span {
     }
 }
 
-@media only screen and (max-width: 1108px) and (min-width: 800px) {
+
+/* @media only screen and (max-width: 1108px) and (min-width: 800px) {
     .stm {
         padding-left: 0;
     }
     .aboutimage {
         margin-left: 20px;
     }
-    .aboutdes {
-        margin-left: 50px;
-    }
+
     .aboutt {
         text-align: justify;
     }
@@ -522,12 +526,18 @@ a span {
 		height: 40%;
 		width: 93%;
     }
-}
+} */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 
-	.mobileMarginBottom{
-		margin-bottom: 25px;
+	.widthIntro{
+		width: 85%;
+	}
+	.hover {
+		margin:10px;
+	}
+	.mobileMargin{
+		margin: 1rem;
 	}
 	.introSection{
 		margin-bottom: 50px;
@@ -593,9 +603,8 @@ a span {
         color: royalblue;
         margin: 50px;
 		padding-bottom: 0;
-        /* margin-bottom: 30px; */
-
         }
+
     .clearfix>.pull-right {
         position: absolute;
         right: 0;
@@ -660,19 +669,12 @@ a span {
 		margin-top: 0;
     }
     .contact {
-        /* background: linear-gradient(rgb(230, 91, 5) 0%, rgb(168, 89, 37) 100%);
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        background-clip: text; */
         font-size: 1.4rem;
         text-align: center;
         font-weight: bold;
 		color: cadetblue;
-        /* text-transform: uppercase;
-        font-style: oblique; */
     }
     .aboutdes {
-        padding-left: 0;
 		font-size: 1.5rem;
     }
     .rowfooter {
@@ -733,9 +735,7 @@ a span {
         -moz-transition: all 0.3s;
         transition: all 0.3s;
     }
-    .hover {
-        margin-bottom: 10px;
-    }
+ 
 	.skillIcon{
 		width: 50px;
 		height: 50px;
