@@ -1,6 +1,6 @@
 # This is my portfolio which is build using html, css, js, bootstrap and animation.js library.
 
-# [Live](https://iamsunil25.github.io/portfolio/)
+# [Visit](https://iamsunil25.github.io/portfolio)
 
 <!-- # I build this to enhance my web development skills. -->
 
