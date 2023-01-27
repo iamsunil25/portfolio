@@ -101,7 +101,7 @@ window.onscroll = function () {
 
 //contact us form
 contactUsForm.addEventListener('submit', async (event) => {
-	event.preventDefault()
+	event.preventDefault();
 	event.stopPropagation();
 	if(!formSuccess){
 		let submitState  = document.getElementById("submitContactForm")

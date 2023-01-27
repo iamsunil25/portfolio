@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
 </head>
 
 <body style="background: #d4d3d7">
@@ -431,6 +431,11 @@
 	  <div class="form-group">
 		  <textarea type="text" class="form-control"   name="message" id="messageContactForm"  placeholder="Message*" required></textarea>
 	  </div>
+	  <!-- <div class="form-group">
+		<div class="g-recaptcha" data-sitekey="6LeRpS4kAAAAAH7AgQJs89YyZyfMlEtuSD4YxGqS"></div>
+	</div> -->
+    
+
 	<div class="form-group">
 		<button type="submit" id="submitContactForm" class="col-sm-12 row btn btn-primary" style="background-color: #adadffc9;border: 1px solid #adadffc9;color: #2071eb;font-weight: 500;">Submit</button>
 	</div>
@@ -460,16 +465,12 @@
     </main>
 
     <!-- portfilio.js included -->
-    <script type="text/javascript" src="portfolio.js">
-
-
-	</script>
+    <script type="text/javascript" src="portfolio.js"></script>
 
 	
 	<!-- toastify notification -->
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js">
-		
-	</script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
 	<!-- font icons -->
 	<script src="https://kit.fontawesome.com/836a943e18.js" crossorigin="anonymous"></script>
 
@@ -478,17 +479,14 @@
 
     <!-- Animation js library included -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	
+
     <script>
         AOS.init({
             offset: 150,
             duration: 1000,
         });
-		
-		
     </script>
-
-
+	
 </body>
 
 </html>
