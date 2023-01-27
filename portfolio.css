@@ -510,24 +510,6 @@ a span {
 }
 
 
-/* @media only screen and (max-width: 1108px) and (min-width: 800px) {
-    .stm {
-        padding-left: 0;
-    }
-    .aboutimage {
-        margin-left: 20px;
-    }
-
-    .aboutt {
-        text-align: justify;
-    }
-    .covidimage {
-        margin-top: 50px;
-		height: 40%;
-		width: 93%;
-    }
-} */
-
 @media only screen and (max-width: 700px) {
 
 	.widthIntro{
@@ -616,7 +598,6 @@ a span {
         justify-content: center;
         align-items: center;
         z-index: 99999;
-
         width: 100%;
         height: 100%;
     }
