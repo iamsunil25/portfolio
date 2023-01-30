@@ -8,7 +8,7 @@ let formSuccessMessage = "Gracias, Sunil will be reached out to you via email"
 const height = introducImage.clientHeight;
 const width = introducImage.clientWidth;
 const navlist2 = document.querySelectorAll("nav ul li a");
-
+let captchaToken=null;
 // body overflow hidden below 700px screen width
 if (!window.screen.width < 700) {
   document.querySelector("body").style.overflowX = "hidden";
@@ -103,6 +103,26 @@ window.onscroll = function () {
 contactUsForm.addEventListener('submit', async (event) => {
 	event.preventDefault();
 	event.stopPropagation();
+	var response = grecaptcha.getResponse();
+	
+
+if(response.length == 0){
+	Toastify({
+		text: "Please confirm you are not robot",
+		duration: 4000,
+		close: true,
+		ursor: `pointer`,
+		gravity: "top", 
+		position: "right", 
+		style: {
+			background: '#d51e1ec4'
+		},
+		padding: `23px 23px`,
+		color: `#ffffff`,
+		display: `inline-block`,
+		}).showToast()
+	return; 
+}
 	if(!formSuccess){
 		let submitState  = document.getElementById("submitContactForm")
 		submitState.textContent="...Submitting"
@@ -114,6 +134,7 @@ let message= contactUsForm["message"].value
 formSuccess = true;	
 await formSubmitData({name, email, contactNo, message})
 submitState.textContent="Submitted";
+document.getElementById('googleCaptcha').style.pointerEvents="none";
 contactUsForm.reset();
 }
 });
@@ -122,7 +143,11 @@ contactUsForm.reset();
 
 // qpi call for storing contact us form values in db
 async function formSubmitData({name, email, contactNo, message}){
-	// "https://portfolio-e8010-default-rtdb.firebaseio.com"
+	if(!captchaToken) return;
+
+
+	// dev url
+	// const baseUrl ='http://localhost:4000/portfolio/contact-us'
 	let	baseUrl = 'https://my-first-nodejs-project-6a7blcx98-iamsunil25.vercel.app/portfolio/contact-us'
 	try {
 		let contactUsData = {
@@ -131,7 +156,7 @@ async function formSubmitData({name, email, contactNo, message}){
 				"message":message ,
 				"contact_number":contactNo
 			}
-		const res = await axios.post(baseUrl,{"contactUsData":contactUsData})
+		const res = await axios.post(baseUrl,{"contactUsData":contactUsData, token:captchaToken})
 		console.log("res data contact us api", res.data);
 		if(res.status==201){
 	toastMsg(false)
@@ -204,5 +229,9 @@ navlist2.forEach((li) => {
 	  });
 }
 
+// verifyCaptcha
+function verifyCaptcha(token){
+	console.log(" verifyCaptcha token",token);
+captchaToken=token;
 
-
+}
