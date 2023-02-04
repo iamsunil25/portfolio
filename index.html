@@ -1,491 +1,564 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Sunil Joshi portfolio website" />
-	<meta name="keywords" content=" Sunil Joshi, Portfolio, iamsunil25,  ">
-	<meta name="author" content="Sunil Joshi">
-	<meta name="twitter:site" content="@iamsunil25" />
-	<!-- Primary Meta Tags -->
-<meta name="title" content="Sunil Joshi Portfolio">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Sunil Joshi portfolio website" />
+		<meta name="keywords" content=" Sunil Joshi, Portfolio, iamsunil25, ">
+		<meta name="author" content="Sunil Joshi">
+		<meta name="twitter:site" content="@iamsunil25" />
+		<!-- Primary Meta Tags -->
+		<meta name="title" content="Sunil Joshi Portfolio">
 
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://iamsunil25.github.io/portfolio">
-<meta property="og:title" content="Sunil Joshi Portfolio">
-<meta property="og:description" content="Sunil Joshi portfolio website">
-<meta property="og:image" content="">
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://iamsunil25.github.io/portfolio">
+		<meta property="og:title" content="Sunil Joshi Portfolio">
+		<meta property="og:description" content="Sunil Joshi portfolio website">
+		<meta property="og:image" content="">
 
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://iamsunil25.github.io/portfolio/">
-<meta property="twitter:title" content="Sunil Joshi Portfolio">
-<meta property="twitter:description" content="Sunil Joshi portfolio website">
-<meta property="twitter:image" content="">
-	
-    <title>Sunil Joshi Portfolio</title>
-	<link rel="icon" href="./images/porfoliofavicon2.ico" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" type="text/css" href="portfolio.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-</head>
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url"
+			content="https://iamsunil25.github.io/portfolio/">
+		<meta property="twitter:title" content="Sunil Joshi Portfolio">
+		<meta property="twitter:description" content="Sunil Joshi portfolio website">
+		<meta property="twitter:image" content="">
 
-<body style="background: #d4d3d7">
+		<title>Sunil Joshi Portfolio</title>
+		<link rel="icon" href="./images/profile.ico" />
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link rel="stylesheet" type="text/css" href="portfolio.css" />
+		<link rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+			/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic"
+			rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css"
+			href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	</head>
 
-    <!-- navbar -->
-    <header>
-        <nav class="shadow-lg pb-3 css-selector" id="navbar" style="display: none;">
-            <img src="./images/close.svg" alt="close icon" class="crossIcon" id="crossIcon">
-            <ul>
-                <li class="home">
-                    <a href="#home" id="topZeroClick"  style="text-decoration: none"><img src="./images/icons/navbar_icon/home.svg" alt="home icon" class="navitemimage" />Home</a>
-                </li>
-                <li class="myservice">
-                    <a href="#myservice" style="text-decoration: none"><img src="./images/icons/navbar_icon/service.svg" alt="service icon " class="navitemimage" />Services</a>
-                </li>
-                <li class="projects">
-                    <a href="#projects" style="text-decoration: none"><img src="./images/icons/navbar_icon/work.svg" alt="project icon" width="23px" height="23px" class="navitemimage" />Projects</a>
-                </li>
-                <li class="skills">
-                    <a href="#skills" style="text-decoration: none"><img src="./images/icons/navbar_icon/skills.svg" alt="skills icon" class="navitemimage" width="13px" height="13px" />Skills</a>
-                </li>
-                <li class="resume">
-                    <a href="#resume" style="text-decoration: none"><img src="./images/icons/navbar_icon/cv.svg" alt="resume icon" class="navitemimage" />Resume</a>
-                </li>
-                <li class="about">
-                    <a href="#about" style="text-decoration: none">
-                        <img src="./images/icons/navbar_icon/aboutus.svg" class="navitemimage" alt="about icon" />About</a>
-                </li>
-                <li class="Contact">
-                    <a href="#Contact" style="text-decoration: none"><img alt="contact us icon" src="./images/icons/navbar_icon/contact.svg" class="navitemimage" />Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+	<body style="background: #d4d3d7">
 
-    <br />
+		<!-- navbar -->
+		<header>
+			<nav class="shadow-lg pb-3 css-selector" id="navbar" style="display: none;">
+				<img src="./images/close.svg" alt="close icon" class="crossIcon"
+					id="crossIcon">
+				<ul>
+					<li class="home">
+						<a href="#home" id="topZeroClick" style="text-decoration: none"><img
+								src="./images/icons/navbar_icon/home.svg" alt="home icon"
+								class="navitemimage" />Home</a>
+					</li>
+					<li class="myservice">
+						<a href="#myservice" style="text-decoration: none"><img
+								src="./images/icons/navbar_icon/service.svg" alt="service icon "
+								class="navitemimage" />Services</a>
+					</li>
+					<li class="projects">
+						<a href="#projects" style="text-decoration: none"><img
+								src="./images/icons/navbar_icon/work.svg" alt="project icon"
+								width="23px" height="23px" class="navitemimage" />Projects</a>
+					</li>
+					<li class="skills">
+						<a href="#skills" style="text-decoration: none"><img
+								src="./images/icons/navbar_icon/skills.svg" alt="skills icon"
+								class="navitemimage" width="13px" height="13px" />Skills</a>
+					</li>
+					<li class="resume">
+						<a href="#resume" style="text-decoration: none"><img
+								src="./images/icons/navbar_icon/cv.svg" alt="resume icon"
+								class="navitemimage" />Resume</a>
+					</li>
+					<li class="about">
+						<a href="#about" style="text-decoration: none">
+							<img src="./images/icons/navbar_icon/aboutus.svg" class="navitemimage"
+								alt="about icon" />About</a>
+					</li>
+					<li class="Contact">
+						<a href="#Contact" style="text-decoration: none"><img alt="contact us
+								icon" src="./images/icons/navbar_icon/contact.svg" class="navitemimage"
+								/>Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 
-    <br />
-    <main style="margin-top: 130px">
+		<br />
 
-        <!-- sidebar hamburger icon for mobile screen -->
-        <div class="text-right mr-1">
-            <button class="btn" style="outline: none; padding: 1px 5px">
-				<img	
-				id="hamburgericon"
-				src="./images/hamburger.svg"
-			alt="hamburger icon"
-				  style="width: 33px;height: 33px; font-weight: bold"
-				/>
-        </button>
-        </div>
+		<br />
+		<main style="margin-top: 130px">
 
-        <!-- Intro section -->
-        <section  id="home" data-aos="fade-down">	
-            <div class="row introSection" >
-				<div class="col-md-2 d-content" >
-					<img id="introducImage" class="introimage" src="images/profile.jpg" alt="sunil's profile" />
-				</div>
-				<div class="col-md-5">
-					<div class="typewriter mob1" style="margin-left: 30px;">
-						<h2 class="card-title" id="hello" style="font-style: italic">
-					   Hola 👋
-						</h2>
-						<h2 style="font-style: italic">This is Sunil Joshi</h2>
-						<h3 style="margin-left: 3px; color: cadetblue">
-							I am Frontend Web Developer
-						</h3>
-						<a href="#resume" style="text-decoration: none"><button class="btn-3">CV/Resume</button></a
-				  >
-				  <a href="#about" style="text-decoration: none"
-					><button class="btn-4">About Me</button></a
-				  >
-			
-				</div>
-				</div>
-	
-            </div>
-
-        		<!-- down arrow -->
-			<div class="mb-3" id="downArrow"  style="display:flex;justify-content: center;height: 300px;padding-top:180px;">
-				<a href="#myservice" style="text-decoration: none;">
-				<img width="100px" src="./images/down-arrow.png" height="100px" alt="down arrow">
-				</a>
-			  
+			<!-- sidebar hamburger icon for mobile screen -->
+			<div class="text-right mr-1">
+				<button class="btn" style="outline: none; padding: 1px 5px">
+					<img
+						id="hamburgericon"
+						src="./images/hamburger.svg"
+						alt="hamburger icon"
+						style="width: 33px;height: 33px; font-weight: bold"
+						/>
+				</button>
 			</div>
-	
-      </section>
 
-
-	
-
-      <!-- my services section  -->
-      <section class="service" id="myservice" data-aos="fade-out">
-        <div class="container-fluid">
-          <h1 class="contact mb-5">
-            &lt;My Services&gt; <br />
-          </h1>
-
-          <div class="vertical" id="vertical">
-            <div id="circle2" class="circle1">
-              <div class="line" id="line"></div>
-              <div class="content_box">
-                <i
-                  class="fa fa-code"
-                  aria-hidden="true"
-                  style="font-size: 2rem"
-                ></i>
-                <h2 style="font-style: normal">Web Development</h2>
-                <p style="font-size: 1.2rem; font-weight: 500;color: #565656;">
-                  I can make your static/dynamic<br />
-                  website using HTML, CSS(Bootstrap),<br />Javascript, Angular,
-                  React.
-                </p>
-              </div>
-            </div>
-
-            <div class="circle1" id="circle1">
-              <div class="line2" id="line2"></div>
-              <div class="content_box2">
-                <i
-                  class="fa fa-mobile"
-                  aria-hidden="true"
-                  style="font-size: 2rem"
-                ></i>
-                <h2 style="font-style: normal">Responsive Web Design</h2>
-                <p style="font-size: 1.2rem; font-weight: 500;color: #565656;">
-                  Let me take care of mobile responsiveness for you and provide
-                  a high-quality product for your business! I have made many
-                  rwd(responsive web design) which are exquisite.
-                </p>
-              </div>
-            </div>
-
-            <div id="circle3" class="circle1">
-              <div class="line" id="line3"></div>
-              <div class="content_box3">
-                <i
-                  class="fa fa-file-code-o"
-                  aria-hidden="true"
-                  style="font-size: 2rem"
-                ></i>
-                <h2 style="font-style: normal">Figma to HTML</h2>
-
-                <p style="font-size: 1.2rem; font-weight: 500;color: #565656;">
-                  I can convert your photoshop, figma design(template) or other
-                  format design templates into a pixel-perfect HTML, CSS, JS
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--       project section   -->
-      <section id="projects" data-aos="flip-left">
-        <!-- <div class="container-fluid"> -->
-          <h1 class="contact" style="line-height:20px;">
-            &lt;Projects&gt; <br />
-          </h1>
-
-		  <div style="flex-wrap: wrap;" class="d-flex mt-5 mb-5 justify-content-center">
-
-			<!-- Weather App -->
-			<div class="mobileMargin">
-				<a style="cursor: pointer"  href="https://redux-weather-app-ochre.vercel.app" target="_blank">
-				<img class="cardsForProjects" src="./images/weather_app_redux.png" alt="redux weather app" />
-			</a>
-				<div style="display:block;text-align: center;color: cadetblue;">
-					<figcaption> React-Redux Weather App <br/>
-						<b>Redux, Reactstrap, Class Component</b>
-					</figcaption>
-					<div></div>
-				</div>
-				</div>
-
-				<!-- Movies App -->
-				<div class= "mobileMargin">
-					<a style="cursor: pointer"  href="https://react-entertainment-webapp.vercel.app" target="_blank">
-					<img class="cardsForProjects" src="./images/react-entertainment-app.png" alt="redux weather app" />
-				</a>
-					<div style="display:block;text-align: center;color: cadetblue;">
-						<figcaption>React-Entertainment App<br/>
-							<b>Typescript, React-Query, Talwind</b>
-						</figcaption>
+			<!-- Intro section -->
+			<section id="home" data-aos="fade-down">
+				<div class="row introSection">
+					<div class="col-md-2 d-content">
+						<img id="introducImage" class="introimage" src="images/profile.jpg"
+							alt="sunil's profile" />
 					</div>
-				
-			   </div>
+					<div class="col-md-5">
+						<div class="typewriter mob1" style="margin-left: 30px;">
+							<h2 class="card-title" id="hello" style="font-style: italic">
+								Hola 👋
+							</h2>
+							<h2 style="font-style: italic">This is Sunil Joshi</h2>
+							<h3 style="margin-left: 3px; color: cadetblue">
+								I am Frontend Web Developer
+							</h3>
+							<a href="#resume" style="text-decoration: none"><button class="btn-3">CV/Resume</button></a>
+							<a href="#about" style="text-decoration: none"><button class="btn-4">About
+									Me</button></a>
 
-			   <!-- Tic Tac Toe -->
-			   <div class="mobileMargin">
-				<a style="cursor: pointer"  href="https://tic-tac-toe-iamsunil25.vercel.app/" target="_blank">
-				<img class="cardsForProjects" src="./images/tic-tac-toe.png" alt="tic-tac-toe game" />
-			</a>
-				<div  style="display:block;text-align: center;color: cadetblue;">
-					<figcaption>Tic-Tac-Toe<br/>
-						<b>Html 5, Vanilla JS, Talwinds CSS</b>
-					</figcaption>
+						</div>
+					</div>
+
 				</div>
-			   </div>
 
-			   <!-- Angular -->
-			<div class="mobileMargin">			
-				<a style="cursor: pointer" href="https://iamsunil25.github.io/covid19-Angular-web" target="_blank">
-			<img class="cardsForProjects" src="./images/covidProjectImage.png"  alt="covid project image" />
-			</a>
-			<div style="display:block;text-align: center;color: cadetblue;">
-				<figcaption>Covid19 Angular Web App<br/>
-					<b>Angular 9, Angular Material</b>
-				</figcaption>
-			</div>	
-			</div>
-		  </div>
+				<!-- down arrow -->
+				<div class="mb-3" id="downArrow" style="display:flex;justify-content:
+					center;height: 300px;padding-top:180px;">
+					<a href="#myservice" style="text-decoration: none;">
+						<img width="100px" src="./images/down-arrow.png" height="100px" alt="down
+							arrow">
+					</a>
 
-      </section>
+				</div>
 
-      <!--         skills section -->
-      <section id="skills" data-aos="flip-right">
-        <div class="container-fluid">
-          <h1 class="contact" style="margin-bottom: 50px">
-            &lt;Skills&gt; <br />
-          </h1>
-        </div>
-        <div
-          class="container"
-          style="display: flex; flex-wrap: wrap; justify-content: center"
-        >
-          <div class="skillStyle">
-			<img src="images/icons/tech_icons/html.svg" class="skillIcon" alt="html icon" >
-            <span class="PLangText">HTML 5</span> 
-          </div>
-          <div class="skillStyle">
-			  <img src="./images/icons/tech_icons/css3.svg" alt="css icon"  class="skillIcon">
-			  <span class="PLangText">CSS 3</span>
-			  
-			</div>
-			<!-- <div class="skillStyle">
+			</section>
+
+
+
+
+			<!-- my services section  -->
+			<section class="service" id="myservice" data-aos="fade-out">
+				<div class="container-fluid">
+					<h1 class="contact mb-5">
+						&lt;My Services&gt; <br />
+					</h1>
+
+					<div class="vertical" id="vertical">
+						<div id="circle2" class="circle1">
+							<div class="line" id="line"></div>
+							<div class="content_box">
+								<i
+									class="fa fa-code"
+									aria-hidden="true"
+									style="font-size: 2rem"></i>
+								<h2 style="font-style: normal">Web Development</h2>
+								<p style="font-size: 1.2rem; font-weight: 500;color: #565656;">
+									I can make your static/dynamic<br />
+									website using HTML, CSS(Bootstrap),<br />Javascript, Angular,
+									React.
+								</p>
+							</div>
+						</div>
+
+						<div class="circle1" id="circle1">
+							<div class="line2" id="line2"></div>
+							<div class="content_box2">
+								<i
+									class="fa fa-mobile"
+									aria-hidden="true"
+									style="font-size: 2rem"></i>
+								<h2 style="font-style: normal">Responsive Web Design</h2>
+								<p style="font-size: 1.2rem; font-weight: 500;color: #565656;">
+									Let me take care of mobile responsiveness for you and provide
+									a high-quality product for your business! I have made many
+									rwd(responsive web design) which are exquisite.
+								</p>
+							</div>
+						</div>
+
+						<div id="circle3" class="circle1">
+							<div class="line" id="line3"></div>
+							<div class="content_box3">
+								<i
+									class="fa fa-file-code-o"
+									aria-hidden="true"
+									style="font-size: 2rem"></i>
+								<h2 style="font-style: normal">Figma to HTML</h2>
+
+								<p style="font-size: 1.2rem; font-weight: 500;color: #565656;">
+									I can convert your photoshop, figma design(template) or other
+									format design templates into a pixel-perfect HTML, CSS, JS
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--       project section   -->
+			<section id="projects" data-aos="flip-left">
+				<!-- <div class="container-fluid"> -->
+				<h1 class="contact" style="line-height:20px;">
+					&lt;Projects&gt; <br />
+				</h1>
+
+				<div style="flex-wrap: wrap;" class="d-flex mt-5 mb-5
+					justify-content-center">
+
+					<!-- Weather App -->
+					<div class="mobileMargin">
+						<a style="cursor: pointer"
+							href="https://redux-weather-app-ochre.vercel.app" target="_blank">
+							<img class="cardsForProjects" src="./images/weather_app_redux.png"
+								alt="redux weather app" />
+						</a>
+						<div style="display:block;text-align: center;color: cadetblue;">
+							<figcaption> React-Redux Weather App <br/>
+									<b>Redux, Reactstrap, Class Component</b>
+								</figcaption>
+								<div></div>
+							</div>
+						</div>
+
+						<!-- Movies App -->
+						<div class="mobileMargin">
+							<a style="cursor: pointer"
+								href="https://react-entertainment-webapp.vercel.app" target="_blank">
+								<img class="cardsForProjects" src="./images/react-entertainment-app.png"
+									alt="redux weather app" />
+							</a>
+							<div style="display:block;text-align: center;color: cadetblue;">
+								<figcaption>React-Entertainment App<br/>
+										<b>Typescript, React-Query, Talwind</b>
+									</figcaption>
+								</div>
+
+							</div>
+
+							<!-- Tic Tac Toe -->
+							<div class="mobileMargin">
+								<a style="cursor: pointer"
+									href="https://tic-tac-toe-iamsunil25.vercel.app/" target="_blank">
+									<img class="cardsForProjects" src="./images/tic-tac-toe.png"
+										alt="tic-tac-toe game" />
+								</a>
+								<div style="display:block;text-align: center;color: cadetblue;">
+									<figcaption>Tic-Tac-Toe<br/>
+											<b>Html 5, Vanilla JS, Talwinds CSS</b>
+										</figcaption>
+									</div>
+								</div>
+
+								<!-- Angular -->
+								<div class="mobileMargin">
+									<a style="cursor: pointer"
+										href="https://iamsunil25.github.io/covid19-Angular-web"
+										target="_blank">
+										<img class="cardsForProjects" src="./images/covidProjectImage.png"
+											alt="covid project image" />
+									</a>
+									<div style="display:block;text-align: center;color: cadetblue;">
+										<figcaption>Covid19 Angular Web App<br/>
+												<b>Angular 9, Angular Material</b>
+											</figcaption>
+										</div>
+									</div>
+								</div>
+
+							</section>
+
+							<!--         skills section -->
+							<section id="skills" data-aos="flip-right">
+								<div class="container-fluid">
+									<h1 class="contact" style="margin-bottom: 50px">
+										&lt;Skills&gt; <br />
+									</h1>
+								</div>
+								<div
+									class="container"
+									style="display: flex; flex-wrap: wrap; justify-content: center">
+									<div class="skillStyle">
+										<img src="images/icons/tech_icons/html.svg" class="skillIcon"
+											alt="html icon">
+										<span class="PLangText">HTML 5</span>
+									</div>
+									<div class="skillStyle">
+										<img src="./images/icons/tech_icons/css3.svg" alt="css icon"
+											class="skillIcon">
+										<span class="PLangText">CSS 3</span>
+
+									</div>
+									<!-- <div class="skillStyle">
 			  <img src="./images/icons/tech_icons/sass.svg" alt="saas icon" class="skillIcon">
 			  <span class="PLangText">SAAS</span> 
 			</div> -->
-	
-          <div class="skillStyle">
-			  <img src="./images/icons/tech_icons/bootstrap.svg" alt="bootstrap icon" class="skillIcon" >
-			  <span class="PLangText">Bootstrap 5</span> 
-			</div>
-          <div class="skillStyle">
-			<img src="./images/icons/tech_icons/js.svg" alt="javascript icon" class="skillIcon">
-			<span class="PLangText">Javascript</span>  
-		</div>
-          <div class="skillStyle">
-			<img src="./images/icons/tech_icons/typescript.svg" alt="typescript icon" class="skillIcon">
-			<span class="PLangText">Typescript</span> 
-		</div>
-          <div class="skillStyle">
-			<img src="./images/icons/tech_icons/react.svg" alt="react.js icon"  class="skillIcon">
-			<span class="PLangText">React.js</span>  
-		</div>
-		<div class="skillStyle">
-			<img src="./images/icons/tech_icons/redux.svg" alt="redux icon"  class="skillIcon">
-			<span class="PLangText">Redux</span>  
-		</div>
-          <div class="skillStyle">
-			<img src="./images/icons/tech_icons/angular.svg" alt="angular icon" class="skillIcon" >
-			<span class="PLangText">Angular</span>   
-		</div>
-		  <div class="skillStyle">
-			<img src="./images/icons/tech_icons/webDevelopment.svg" alt="web development icon" class="skillIcon">
-			<span class="PLangText">Web</span> 
-		</div>
-		<div class="skillStyle">
-			<img src="./images/icons/tech_icons/nodejs-icon-svgrepo-com.svg" alt="mongodb icon" class="skillIcon" >
-			<span class="PLangText">Node.js</span>
-        </div>
-          <div class="skillStyle">
-			<img src="./images/icons/tech_icons/mongodb.svg" alt="mongodb icon" class="skillIcon" >
-			<span class="PLangText">MongoDB</span> 
-        </div>
-		<div class="skillStyle">
-			<img src="./images/icons/tech_icons/vscod.svg" alt="vs code icon" class="skillIcon" >
-			<span class="PLangText">VS Code</span> 
-		</div>
-          <div class="skillStyle">
-			<img src="./images/icons/tech_icons/git.svg" alt="git icon" class="skillIcon" >
-			<span class="PLangText">Git</span>   
-		</div>
-      </section>
+									<div class="skillStyle">
+										<img src="./images/icons/tech_icons/bootstrap.svg" alt="bootstrap
+											icon" class="skillIcon">
+										<span class="PLangText">Bootstrap 5</span>
+									</div>
+									<div class="skillStyle">
+										<img src="./images/icons/tech_icons/js.svg" alt="javascript icon"
+											class="skillIcon">
+										<span class="PLangText">Javascript</span>
+									</div>
+									<div class="skillStyle">
+										<img src="./images/icons/tech_icons/typescript.svg" alt="typescript
+											icon" class="skillIcon">
+										<span class="PLangText">Typescript</span>
+									</div>
+									<div class="skillStyle">
+										<img src="./images/icons/tech_icons/react.svg" alt="react.js icon"
+											class="skillIcon">
+										<span class="PLangText">React.js</span>
+									</div>
+									<div class="skillStyle">
+										<img src="./images/icons/tech_icons/redux.svg" alt="redux icon"
+											class="skillIcon">
+										<span class="PLangText">Redux</span>
+									</div>
+									<div class="skillStyle">
+										<img src="./images/icons/tech_icons/angular.svg" alt="angular icon"
+											class="skillIcon">
+										<span class="PLangText">Angular</span>
+									</div>
+									<div class="skillStyle">
+										<img src="./images/icons/tech_icons/webDevelopment.svg" alt="web
+											development icon" class="skillIcon">
+										<span class="PLangText">Web</span>
+									</div>
+									<div class="skillStyle">
+										<img src="./images/icons/tech_icons/nodejs-icon-svgrepo-com.svg"
+											alt="mongodb icon" class="skillIcon">
+										<span class="PLangText">Node.js</span>
+									</div>
+									<div class="skillStyle">
+										<img src="./images/icons/tech_icons/mongodb.svg" alt="mongodb icon"
+											class="skillIcon">
+										<span class="PLangText">MongoDB</span>
+									</div>
+									<div class="skillStyle">
+										<img src="./images/icons/tech_icons/vscod.svg" alt="vs code icon"
+											class="skillIcon">
+										<span class="PLangText">VS Code</span>
+									</div>
+									<div class="skillStyle">
+										<img src="./images/icons/tech_icons/git.svg" alt="git icon"
+											class="skillIcon">
+										<span class="PLangText">Git</span>
+									</div>
+								</section>
 
-      <!--       resume section   -->
-      <section class="mb-5" id="resume" data-aos="zoom-in">
-        <div class="container">
-          <h1 class="contact mt-5" style="margin-bottom: 50px">
-           &lt;Resume&gt; <br />
-          </h1>
+								<!--       resume section   -->
+								<section class="mb-5" id="resume" data-aos="zoom-in">
+									<div class="container">
+										<h1 class="contact mt-5" style="margin-bottom: 50px">
+											&lt;Resume&gt; <br />
+										</h1>
 
-          <div class="container">
-			 <a
-			href="images/sunil_resume.jpg"
-			download="picture"
-			style="display: flex; justify-content: center;align-items: center;"
-		  >
-		  <img
-		  src="images/sunil_resume.jpg"
-		  alt="resume image"
-		  width="70%"
-		  height="auto" />    
-		</a>
-            </div>
-            </div>
-        </section>
+										<div class="container">
+											<a
+												href="images/sunil_resume.jpg"
+												download="picture"
+												style="display: flex; justify-content: center;align-items: center;">
+												<img
+													src="images/sunil_resume.jpg"
+													alt="resume image"
+													width="70%"
+													height="auto" />
+											</a>
+										</div>
+									</div>
+								</section>
 
-        <!--     about section     -->
-        <section class="mt-5 mb-5" class="row1"  id="about" data-aos="fade-out">
-            <div class="container">
-                <h1 class="contact mt-5">
-                   &lt;About Me&gt; <br />
-				                </h1>
-            </div>
-            <div class="row mt-5" id="about1" style="display: flex;justify-content: center;" id="about1" class="text-center">
+								<!--     about section     -->
+								<section class="mt-5 mb-5" class="row1" id="about" data-aos="fade-out">
+									<div class="container">
+										<h1 class="contact mt-5">
+											&lt;About Me&gt; <br />
+										</h1>
+									</div>
+									<div class="row mt-5" id="about1" style="display: flex;justify-content:
+										center;" id="about1" class="text-center">
 
-                <div class="widthIntro">
-                    <h2 class="aboutdes" style="color:cadetblue">
-                    Frontend Web Developer
-                    </h2>
+										<div class="widthIntro">
+											<h2 class="aboutdes" style="color:cadetblue">
+												Frontend Web Developer
+											</h2>
 
-                    <p class="aboutdes" style="font-size: 1.4rem; font-weight: 500;color: #565656;">
-                        I am Frontend Web Developer at Squarebits Jodhpur.Born and brought up in Jodhpur (Rajasthan), India. 
-						 I make web apps in React and Angular. In my free time I watch football and listen english
-                        songs. I speak hindi, english.I always learn from my atmosphere.
-						<strong>
-							B.Tech 
-						</strong>
-						(CSE) 2021.
+											<p class="aboutdes" style="font-size: 1.4rem; font-weight: 500;color:
+												#565656;">
+												I am Frontend Web Developer at Squarebits Jodhpur.Born and brought
+												up in Jodhpur (Rajasthan), India.
+												I make web apps in React and Angular. In my free time I watch
+												football and listen english
+												songs. I speak hindi, english.I always learn from my atmosphere.
+												<strong>
+													B.Tech
+												</strong>
+												(CSE) 2021.
 
-                    </p>
-                </div>
-            </div>
-        </section>
+											</p>
+										</div>
+									</div>
+								</section>
 
-        <!--     contact section     -->
-        <section class=" mt-1" id="Contact" data-aos="fade-out">
-            <div class="container">
-                <h1 class="contact" id="contactheader">
-                    &lt;Contact Me&gt; <br />
-                </h1>
-            </div>
-            <div class="row rowfooter mt-5 " style="display: flex; justify-content: center; align-items: center">
-                <div title="Linkedin" class="hover">
-                    <a href="https://www.linkedin.com/in/iamsunil25/"   rel="nofollow" target="_blank">
-                        <img src="./images/icons/contact_me/linkedin.svg" alt="linkedin image" class="skillIcon"/>
-                    </a>
-                </div>
-                <div title="Instagram" class="hover">
-                    <a href="https://www.instagram.com/iamsunil25"   rel="nofollow" target="_blank">
-                        <img src="./images/icons/contact_me/instagram.svg" alt="instagram image" class="skillIcon" class="instagramImage" />
-                    </a>
-                </div>
-                <div title="Github" class="hover">
-                    <a href="https://www.github.com/iamsunil25" target="_blank">
-                        <img src="./images/icons/contact_me/github.svg" alt="github image" class="skillIcon" />
-                    </a>
-                </div>
-                <div title="Gmail" class="hover"> 
-                    <a href="mailto:suniljoshi4984@gmail.com"   rel="nofollow" target="_blank">
-                        <img src="./images/icons/contact_me/gmail.svg" alt="gmail image" class="skillIcon"/>
-                    </a>
-                </div>
-				<div title="Leetcode" class="hover">
-                    <a href="https://leetcode.com/iamsunil25" target="_blank"   rel="nofollow" style="background: #d2d7d3">
-                        <img src="./images/icons/tech_icons/leetcode.svg" alt="leetcode image" class="skillIcon" style="border-radius: 50%;background-color: darkkhaki;" />
-						
-                    </a>
-                </div>
-                <div title="Twitter" class="hover">
-                    <a href="https://twitter.com/iamsunil25" target="_blank"   rel="nofollow" style="background: #d2d7d3">
-                        <img src="./images/icons/contact_me/twitter.svg" alt="twitter image" class="skillIcon" style="border-radius: 50%" />
-						
-                    </a>
-                </div>
-            </div>
-<!-- form for contact us -->
-<div class="container my-4">
-<form method="POST" name="contactForm" target="_blank">
-	<div class="form-group">
-		<input type="text" class="form-control"  name="name" id="nameContactForm" placeholder="Name*" required>
-	</div>
+								<!--     contact section     -->
+								<section class=" mt-1" id="Contact" data-aos="fade-out">
+									<div class="container">
+										<h1 class="contact" id="contactheader">
+											&lt;Contact Me&gt; <br />
+										</h1>
+									</div>
+									<div class="row rowfooter mt-5 " style="display: flex; justify-content:
+										center; align-items: center">
+										<div title="Linkedin" class="hover">
+											<a href="https://www.linkedin.com/in/iamsunil25/" rel="nofollow"
+												target="_blank">
+												<img src="./images/icons/contact_me/linkedin.svg" alt="linkedin
+													image" class="skillIcon"/>
+											</a>
+										</div>
+										<div title="Instagram" class="hover">
+											<a href="https://www.instagram.com/iamsunil25" rel="nofollow"
+												target="_blank">
+												<img src="./images/icons/contact_me/instagram.svg" alt="instagram
+													image" class="skillIcon" class="instagramImage" />
+											</a>
+										</div>
+										<div title="Github" class="hover">
+											<a href="https://www.github.com/iamsunil25" target="_blank">
+												<img src="./images/icons/contact_me/github.svg" alt="github image"
+													class="skillIcon" />
+											</a>
+										</div>
+										<div title="Gmail" class="hover">
+											<a href="mailto:suniljoshi4984@gmail.com" rel="nofollow"
+												target="_blank">
+												<img src="./images/icons/contact_me/gmail.svg" alt="gmail image"
+													class="skillIcon"/>
+											</a>
+										</div>
+										<div title="Leetcode" class="hover">
+											<a href="https://leetcode.com/iamsunil25" target="_blank"
+												rel="nofollow" style="background: #d2d7d3">
+												<img src="./images/icons/tech_icons/leetcode.svg" alt="leetcode
+													image" class="skillIcon" style="border-radius:
+													50%;background-color: darkkhaki;" />
 
-	<div class="form-group">
-		<input type="email" class="form-control"  name="email"  id="emailContactForm" placeholder="Email*" required >	
-	</div>
+											</a>
+										</div>
+										<div title="Twitter" class="hover">
+											<a href="https://twitter.com/iamsunil25" target="_blank"
+												rel="nofollow" style="background: #d2d7d3">
+												<img src="./images/icons/contact_me/twitter.svg" alt="twitter image"
+													class="skillIcon" style="border-radius: 50%" />
 
-	<div class="form-group">
-		  <input type="tel" class="form-control"  name="contactNumber" id="contactNumberContactForm"  placeholder="Mobile*"  pattern="[0-9]{10}" maxlength="10" title="Please enter valid mobile number" required >
-	  </div>
+											</a>
+										</div>
+									</div>
+									<!-- form for contact us -->
+									<div class="container my-4">
+										<form method="POST" name="contactForm" target="_blank">
+											<div class="form-group">
+												<input type="text" class="form-control" name="name"
+													id="nameContactForm" placeholder="Name*" required>
+											</div>
 
-	  <div class="form-group">
-		  <textarea type="text" class="form-control"   name="message" id="messageContactForm"  placeholder="Message*" required></textarea>
-	  </div>
-	  <div  id="googleCaptcha" class="form-group">
-		<div class="g-recaptcha" data-sitekey="6LeRpS4kAAAAAH7AgQJs89YyZyfMlEtuSD4YxGqS" data-callback="verifyCaptcha"></div>
-	</div>
-    
+											<div class="form-group">
+												<input type="email" class="form-control" name="email"
+													id="emailContactForm" placeholder="Email*" required>
+											</div>
 
-	<div class="form-group">
-		<button type="submit" id="submitContactForm" class="col-sm-12 row btn btn-primary" style="background-color: #adadffc9;border: 1px solid #adadffc9;color: #2071eb;font-weight: 500;">Submit</button>
-	</div>
-  </form>
-</div>
+											<div class="form-group">
+												<input type="tel" class="form-control" name="contactNumber"
+													id="contactNumberContactForm" placeholder="Mobile*"
+													pattern="[0-9]{10}" maxlength="10" title="Please enter valid mobile
+													number" required>
+											</div>
+
+											<div class="form-group">
+												<textarea type="text" class="form-control" name="message"
+													id="messageContactForm" placeholder="Message*" required></textarea>
+											</div>
+											<div id="googleCaptcha" class="form-group">
+												<div class="g-recaptcha"
+													data-sitekey="6LeRpS4kAAAAAH7AgQJs89YyZyfMlEtuSD4YxGqS"
+													data-callback="verifyCaptcha"></div>
+											</div>
+
+
+											<div class="form-group">
+												<button type="submit" id="submitContactForm" class="col-sm-12 row
+													btn btn-primary" style="background-color: #adadffc9;border: 1px
+													solid #adadffc9;color: #2071eb;font-weight: 500;">Submit</button>
+											</div>
+										</form>
+									</div>
 
 
 
-<!-- contact footer -->
-            <div class="py-2" style="display: block;background-color:#565656 ;" >
-				<div class="mt-1 footerText" id="myPhone">
-					<img src="./images/icons/contact_me/phone.svg"  alt="phone icon" class="footerImageRes"> <a style="text-decoration: none;" href="tel:+919057553147"> 9057553147</a> 
-                
-                </div>
-                <div class="footerText" id="myEmail">
-					<img src="./images/icons/contact_me/gmail.svg"  alt="gmail icon" class="footerImageRes"> <a  style="text-decoration: none;" href="mailto:suniljoshi4984@gmail.com" >suniljoshi4984@gmail.com</a>              
-				</div>
-                <div class="footerText mb-1" id="myHometown"><img  src="./images/icons/contact_me/location.svg" alt="address icon" class="footerImageRes">  Jodhpur (Rajasthan), India</div>
-            </div>
-			
-        </section>
+									<!-- contact footer -->
+									<div class="py-2" style="display: block;background-color:#565656 ;">
+										<div class="mt-1 footerText" id="myPhone">
+											<img src="./images/icons/contact_me/phone.svg" alt="phone icon"
+												class="footerImageRes"> <a style="text-decoration: none;"
+												href="tel:+919057553147"> 9057553147</a>
 
-        <!-- uparrow button -->
-        <a id="upArrow" style="cursor:pointer">
-            <img src="images/top-arrow-white.png" class="top-arrow" alt="uparrow image" title="back to top" />
-        </a>
-    </main>
+										</div>
+										<div class="footerText" id="myEmail">
+											<img src="./images/icons/contact_me/gmail.svg" alt="gmail icon"
+												class="footerImageRes"> <a style="text-decoration: none;"
+												href="mailto:suniljoshi4984@gmail.com">suniljoshi4984@gmail.com</a>
+										</div>
+										<div class="footerText mb-1" id="myHometown"><img
+												src="./images/icons/contact_me/location.svg" alt="address icon"
+												class="footerImageRes"> Jodhpur (Rajasthan), India</div>
+									</div>
 
-    <!-- portfilio.js included -->
-    <script type="text/javascript" src="portfolio.js"></script>
+								</section>
 
-	
-	<!-- toastify notification -->
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+								<!-- uparrow button -->
+								<a id="upArrow" style="cursor:pointer">
+									<img src="images/top-arrow-white.png" class="top-arrow" alt="uparrow
+										image" title="back to top" />
+								</a>
+							</main>
 
-	<!-- font icons -->
-	<script src="https://kit.fontawesome.com/836a943e18.js" crossorigin="anonymous"></script>
+							<!-- portfilio.js included -->
+							<script type="text/javascript" src="portfolio.js"></script>
 
-<!-- axios api request -->
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-    <!-- Animation js library included -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+							<!-- toastify notification -->
+							<script type="text/javascript"
+								src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
-    <script>
+							<!-- font icons -->
+							<script src="https://kit.fontawesome.com/836a943e18.js"
+								crossorigin="anonymous"></script>
+
+							<!-- axios api request -->
+							<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+							<!-- Animation js library included -->
+							<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+							<script>
         AOS.init({
             offset: 150,
             duration: 1000,
         });
     </script>
-	
-</body>
+						</body>
 
-</html>
+					</html>
