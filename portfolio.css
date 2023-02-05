@@ -70,14 +70,6 @@ input {
 	outline: 0;
 	box-shadow: 0 0 0 1px #000000 !important;
 }
-
-/* #upArrow i {
-    transform: rotate(-45deg);
-    position: absolute;
-    font-size: 40px;
-    margin: -13px;
-    display: none;
-} */
 .top-arrow {
 	font-weight: 100;
 	display: inline-block;
@@ -771,6 +763,11 @@ a span {
 		display: grid;
 		margin: 20px;
 	}
+	.resize-captcha{
+		transform:scale(0.77);
+		transform-origin: 0 0;
+	  }
+
 
 }
 
