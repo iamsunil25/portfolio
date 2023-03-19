@@ -62,8 +62,9 @@ function handleMobileResponsiveness() {
 	hideSidebar()
   }
 
-  if (window.screen.width > 700) {
-    hamburgericon.parentElement.style.display = "none";
+// show sidebar icon
+  if (window.screen.width < 700) {
+    hamburgericon.parentElement.style.display = "inline-block";
   }
 }
 
