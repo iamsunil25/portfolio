@@ -9,7 +9,7 @@ const height = introducImage.clientHeight;
 const width = introducImage.clientWidth;
 const navlist2 = document.querySelectorAll("nav ul li a");
 let captchaToken=null;
-// body overflow hidden below 700px screen width
+//  overflow hidden below 700px screen width
 if (!window.screen.width < 700) {
   document.querySelector("body").style.overflowX = "hidden";
 }
