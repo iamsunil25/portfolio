@@ -46,6 +46,7 @@ function handleMobileResponsiveness() {
     document.getElementById("line").classList.remove("line");
     document.getElementById("line2").classList.remove("line2");
     document.getElementById("line3").classList.remove("line");
+	document.getElementById("home").classList.remove("homeSection");
     document.getElementById("vertical").classList.remove("vertical");
     document.getElementById("circle1").classList.remove("circle1");
     document.getElementById("circle2").classList.remove("circle1");
@@ -57,7 +58,8 @@ function handleMobileResponsiveness() {
     document.getElementById("myHometown").style.fontSize = "1.4rem";
     document.getElementById("contactheader").style.marginLeft = "-15px";
     document.getElementById("crossIcon").style.display = "none";
-	document.getElementById("downArrow").style.display = "none";
+	document.getElementsByClassName("removePadding")[0].classList.remove("removePadding")
+	// document.getElementById("downArrow").style.display = "none";
 	//hide sidebar
 	hideSidebar()
   }
