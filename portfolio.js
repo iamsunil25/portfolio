@@ -151,7 +151,7 @@ async function formSubmitData({name, email, contactNo, message}){
 
 	// dev url
 	// const baseUrl ='http://localhost:4000/portfolio/contact-us'
-	let	baseUrl = 'https://my-first-nodejs-project-6a7blcx98-iamsunil25.vercel.app/portfolio/contact-us'
+	const	baseUrl = 'https://my-first-nodejs-project-6a7blcx98-iamsunil25.vercel.app/portfolio/contact-us'
 	try {
 		let contactUsData = {
 				"name":name,
