@@ -4,7 +4,7 @@ let introducImage = document.getElementById("introducImage");
 let contactUsForm = document.forms["contactForm"];
 let formSuccess = false;
 let errorMessage = "Something went wrong please try again later"
-let formSuccessMessage = "Gracias, Sunil will be reached out to you via email"
+let formSuccessMessage = "Gracias, Sunil will be reached out to you via email."
 const height = introducImage.clientHeight;
 const width = introducImage.clientWidth;
 const navlist2 = document.querySelectorAll("nav ul li a");
@@ -160,12 +160,14 @@ async function formSubmitData({name, email, contactNo, message}){
 				"contact_number":contactNo
 			}
 		const res = await axios.post(baseUrl,{"contactUsData":contactUsData, token:captchaToken})
-		console.log("res data contact us api", res.data);
+		// console.log("res data contact us api", res);
+		// {"contactUsData":{"index":0,"code":11000,"keyPattern":{"contact_number":1},"keyValue":{"contact_number":"9087553147"}},"message":"Contactus Details Stored Successfully"}
 		if(res.status==201){
 	toastMsg(false)
 		}
 	} catch (error) {
-		console.log("error while api calling",error);
+		errorMessage=error?.response?.data?.message
+		// console.log("error while api calling",error?.response?.data?.message);
 		toastMsg(true)
 	}
 
@@ -175,7 +177,7 @@ async function formSubmitData({name, email, contactNo, message}){
 function toastMsg(error){
 	Toastify({
 		text: error ? errorMessage:formSuccessMessage,
-		duration: 3000,
+		duration: 8000,
 		close: true,
 		ursor: `pointer`,
 		gravity: "top", 
