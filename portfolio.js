@@ -159,14 +159,16 @@ async function formSubmitData({name, email, contactNo, message}){
 				"message":message ,
 				"contact_number":contactNo
 			}
-		const res = await axios.post(baseUrl,{"contactUsData":contactUsData, token:captchaToken})
+		const res = await axios.post(baseUrl,{"contactUsData":contactUsData, token:captchaToken}, {headers:{
+			'Access-Control-Allow-Origin' : '*',
+		}})
 		// console.log("res data contact us api", res);
 		// {"contactUsData":{"index":0,"code":11000,"keyPattern":{"contact_number":1},"keyValue":{"contact_number":"9087553147"}},"message":"Contactus Details Stored Successfully"}
 		if(res.status==201){
 	toastMsg(false)
 		}
 	} catch (error) {
-		errorMessage=error?.response?.data?.message
+		errorMessage=error?.response?.data?.message ? error?.response?.data?.message :errorMessage;
 		// console.log("error while api calling",error?.response?.data?.message);
 		toastMsg(true)
 	}
