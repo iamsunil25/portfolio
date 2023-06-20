@@ -106,7 +106,7 @@ window.onscroll = function () {
 contactUsForm.addEventListener('submit', async (event) => {
 	event.preventDefault();
 	event.stopPropagation();
-	var response = grecaptcha.getResponse();
+	var response = await grecaptcha.getResponse();
 	
 
 if(response.length == 0){
@@ -128,30 +128,37 @@ if(response.length == 0){
 }
 	if(!formSuccess){
 		let submitState  = document.getElementById("submitContactForm")
-		submitState.textContent="...Submitting"
-		submitState.disabled = true;
+	
+		// SubmitText="...Submitting"
+		// submitState.disabled = true;
 let name = contactUsForm["name"].value
 let email = contactUsForm["email"].value
 let contactNo= contactUsForm["contactNumber"].value
 let message= contactUsForm["message"].value
 formSuccess = true;	
-await formSubmitData({name, email, contactNo, message})
-submitState.textContent="Submitted";
-document.getElementById('googleCaptcha').style.pointerEvents="none";
+await formSubmitData({name, email, contactNo, message, callback:()=>{
+	submitState.textContent ="Submitted";
+	submitState.disabled=false;
+	document.getElementById('googleCaptcha').style.pointerEvents="none";
 contactUsForm.reset();
+},submitState })
+
+
 }
 });
 
 
 
 // qpi call for storing contact us form values in db
-async function formSubmitData({name, email, contactNo, message}){
+async function formSubmitData({name, email, contactNo, message,callback, submitState}){
 	if(!captchaToken) return;
 
+	submitState.textContent = "...Submitting";
+	submitState.disabled = true;
 
 	// dev url
 	// const baseUrl ='http://localhost:4000/portfolio/contact-us'
-	const baseUrl = 'https://my-first-nodejs-project.vercel.app/portfolio/contact-us'
+	const baseUrl = 'https://my-first-node-project2.vercel.app/portfolio/contact-us'
 	try {
 		let contactUsData = {
 				"name":name,
@@ -165,10 +172,14 @@ async function formSubmitData({name, email, contactNo, message}){
 		// console.log("res data contact us api", res);
 		// {"contactUsData":{"index":0,"code":11000,"keyPattern":{"contact_number":1},"keyValue":{"contact_number":"9087553147"}},"message":"Contactus Details Stored Successfully"}
 		if(res.status==201){
-	toastMsg(false)
+			toastMsg(false)
+			callback()
 		}
 	} catch (error) {
-		errorMessage=error?.response?.data?.message ? error?.response?.data?.message :errorMessage;
+		submitState.textContent = "Submit";
+		submitState.disabled=false;
+
+		errorMessage = error?.response?.data?.message ? error?.response?.data?.message :errorMessage;
 		// console.log("error while api calling",error?.response?.data?.message);
 		toastMsg(true)
 	}
@@ -203,7 +214,6 @@ crossIcon.addEventListener("click", () => {
 // toggling sidebar
 hamburgericon.addEventListener("click", () => {
   if (navbar.style.display == "none") {
-    // let navbar = document.getElementById("navbar").style
     navbar.style.display = "block";
     navbar.style.position = "fixed";
     let body = document.querySelector("body");
@@ -238,7 +248,7 @@ navlist2.forEach((li) => {
 
 // verifyCaptcha
 function verifyCaptcha(token){
-	console.log(" verifyCaptcha token",token);
+	// console.log(" verifyCaptcha token",token);
 captchaToken=token;
 
 }
