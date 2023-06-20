@@ -166,9 +166,7 @@ async function formSubmitData({name, email, contactNo, message,callback, submitS
 				"message":message ,
 				"contact_number":contactNo
 			}
-		const res = await axios.post(baseUrl,{"contactUsData":contactUsData, token:captchaToken}, {headers:{
-			'Access-Control-Allow-Origin' : '*',
-		}})
+		const res = await axios.post(baseUrl,{"contactUsData":contactUsData, token:captchaToken})
 		// console.log("res data contact us api", res);
 		// {"contactUsData":{"index":0,"code":11000,"keyPattern":{"contact_number":1},"keyValue":{"contact_number":"9087553147"}},"message":"Contactus Details Stored Successfully"}
 		if(res.status==201){
