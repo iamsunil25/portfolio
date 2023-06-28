@@ -114,7 +114,8 @@ if(response.length == 0){
 		text: "Please confirm you are not robot",
 		duration: 4000,
 		close: true,
-		ursor: `pointer`,
+		toastId:"googleCaptchaConfirmError",
+		cursor: `pointer`,
 		gravity: "top", 
 		position: "right", 
 		style: {
@@ -135,12 +136,13 @@ let name = contactUsForm["name"].value
 let email = contactUsForm["email"].value
 let contactNo= contactUsForm["contactNumber"].value
 let message= contactUsForm["message"].value
-formSuccess = true;	
+
 await formSubmitData({name, email, contactNo, message, callback:()=>{
 	submitState.textContent ="Submitted";
 	submitState.disabled=false;
 	document.getElementById('googleCaptcha').style.pointerEvents="none";
 contactUsForm.reset();
+formSuccess = true;	
 },submitState })
 
 
@@ -176,7 +178,7 @@ async function formSubmitData({name, email, contactNo, message,callback, submitS
 	} catch (error) {
 		submitState.textContent = "Submit";
 		submitState.disabled=false;
-
+		grecaptcha.reset()  
 		errorMessage = error?.response?.data?.message ? error?.response?.data?.message :errorMessage;
 		// console.log("error while api calling",error?.response?.data?.message);
 		toastMsg(true)
@@ -190,6 +192,7 @@ function toastMsg(error){
 		text: error ? errorMessage:formSuccessMessage,
 		duration: 8000,
 		close: true,
+		toastId:"apiError",
 		ursor: `pointer`,
 		gravity: "top", 
 		position: "right", 
