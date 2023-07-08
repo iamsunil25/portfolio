@@ -2,7 +2,7 @@ let navbar = document.getElementById("navbar");
 let hamburgericon = document.getElementById("hamburgericon");
 let introducImage = document.getElementById("introducImage");
 let contactUsForm = document.forms["contactForm"];
-let formSuccess = false;
+// let formSuccess = false;
 let errorMessage = "Something went wrong please try again later"
 let formSuccessMessage = "Gracias, Sunil will be reached out to you via email."
 const height = introducImage.clientHeight;
@@ -127,7 +127,7 @@ if(response.length == 0){
 		}).showToast()
 	return; 
 }
-	if(!formSuccess){
+	// if(!formSuccess){
 		let submitState  = document.getElementById("submitContactForm")
 	
 		// SubmitText="...Submitting"
@@ -138,15 +138,15 @@ let contactNo= contactUsForm["contactNumber"].value
 let message= contactUsForm["message"].value
 
 await formSubmitData({name, email, contactNo, message, callback:()=>{
-	submitState.textContent ="Submitted";
+	submitState.textContent ="Submit";
 	submitState.disabled=false;
-	document.getElementById('googleCaptcha').style.pointerEvents="none";
+	grecaptcha.reset(); 
 contactUsForm.reset();
-formSuccess = true;	
+// formSuccess = true;	
 },submitState })
 
 
-}
+// }
 });
 
 
