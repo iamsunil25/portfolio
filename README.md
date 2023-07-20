@@ -1,4 +1,4 @@
-# preview ===>  [Visit](https://iamsunil25.github.io/portfolio)
+# [Preview](https://iamsunil25.github.io/portfolio)
 # html, css, js, bootstrap and animation.js library 
 # google captcha added
 # contact us form api integrated
