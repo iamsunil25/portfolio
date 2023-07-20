@@ -102,7 +102,7 @@ input {
 	position: fixed;
 	text-decoration: none;
 	bottom: 135px;
-	right: 12px;
+	left: 12px;
 	width: 40px;
 	height: 40px;
 	transform: rotate(45deg);
@@ -800,3 +800,4 @@ input::-webkit-inner-spin-button {
 input[type=number] {
 	-moz-appearance: textfield;
 }
+

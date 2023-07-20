@@ -83,6 +83,7 @@ function navbarDisplay() {
 
 //this is  used for show arrow icon when scrolltop >300
 function upArrowDispaly() {
+	if (window.screen.width < 700) {
   let upArrowIcon = document.getElementById("upArrow");
   if (document.documentElement.scrollTop > 500) {
     upArrowIcon.style.display = "block";
@@ -92,12 +93,13 @@ function upArrowDispaly() {
     upArrowIcon.children[0].style.display = "none";
   }
 }
+}
 
 // detecting scrolling
 window.onscroll = function () {
   sectionActive();
   navbarDisplay();
-  upArrowDispaly();
+	  upArrowDispaly();
 };
 
 
