@@ -139,9 +139,13 @@ let email = contactUsForm["email"].value
 let contactNo= contactUsForm["contactNumber"].value
 let message= contactUsForm["message"].value
 
-await formSubmitData({name, email, contactNo, message, callback:()=>{
+await formSubmitData({name, email, contactNo, message,contactUsForm, callback:()=>{
 	submitState.textContent ="Submit";
 	submitState.disabled=false;
+ contactUsForm["name"].disabled=false;
+contactUsForm["email"].disabled=false;
+contactUsForm["contactNumber"].disabled=false;
+contactUsForm["message"].disabled=false;
 	grecaptcha.reset(); 
 contactUsForm.reset();
 // formSuccess = true;	
@@ -154,11 +158,15 @@ contactUsForm.reset();
 
 
 // qpi call for storing contact us form values in db
-async function formSubmitData({name, email, contactNo, message,callback, submitState}){
+async function formSubmitData({name, email, contactNo, message,contactUsForm,callback, submitState}){
 	if(!captchaToken) return;
 
 	submitState.textContent = "...Submitting";
 	submitState.disabled = true;
+	contactUsForm["name"].disabled= true;
+	contactUsForm["email"].disabled = true;
+	contactUsForm["contactNumber"].disabled = true;
+	contactUsForm["message"].disabled = true;
 
 	// dev url
 	// const baseUrl ='http://localhost:4000/portfolio/contact-us'
@@ -172,13 +180,16 @@ async function formSubmitData({name, email, contactNo, message,callback, submitS
 			}
 		const res = await axios.post(baseUrl,{"contactUsData":contactUsData, token:captchaToken})
 		// console.log("res data contact us api", res);
-		// {"contactUsData":{"index":0,"code":11000,"keyPattern":{"contact_number":1},"keyValue":{"contact_number":"9087553147"}},"message":"Contactus Details Stored Successfully"}
 		if(res.status==201){
 			toastMsg(false)
 			callback()
 		}
 	} catch (error) {
 		submitState.textContent = "Submit";
+		contactUsForm["name"].disabled=false;
+		contactUsForm["email"].disabled=false;
+		contactUsForm["contactNumber"].disabled=false;
+		contactUsForm["message"].disabled=false;
 		submitState.disabled=false;
 		grecaptcha.reset()  
 		errorMessage = error?.response?.data?.message ? error?.response?.data?.message :errorMessage;
